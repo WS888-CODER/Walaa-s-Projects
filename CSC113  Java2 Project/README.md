@@ -8,3 +8,13 @@ Next, the user selects the number of cakes they want to order, followed by custo
 Once the customization is complete, the user receives a detailed invoice summarizing the full order, including prices. Additionally, the interface allows users to cancel the entire order or remove specific items from it before final confirmation.
 
 This project demonstrates skills in Java GUI development, user input validation, and dynamic order processing to provide a smooth and interactive customer experience.
+<img width="1173" height="743" alt="image" src="https://github.com/user-attachments/assets/1796292d-a5ea-4dbb-a1b1-c38bd887803c" />
+<img width="1185" height="815" alt="image" src="https://github.com/user-attachments/assets/c3ccac47-90c1-4446-9708-87dfbefefaaf" />
+<img width="1169" height="752" alt="image" src="https://github.com/user-attachments/assets/f93f673b-d55e-46f1-b599-fb06e403058a" />
+<img width="1180" height="750" alt="image" src="https://github.com/user-attachments/assets/0a48f74f-e173-4d7a-b846-9a27a4f5fb04" />
+<img width="1187" height="751" alt="image" src="https://github.com/user-attachments/assets/5f7da7e0-8345-4b67-9a46-4ad6148f784f" />
+
+
+
+
+
