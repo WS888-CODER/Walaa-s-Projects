@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookUp</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 100px;
+            color: #4285f4;
+            margin-bottom: 20px;
+        }
+        #searchBox {
+            width: 90%;
+            max-width: 600px;
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid #dcdcdc;
+            border-radius: 30px;
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #status {
+            margin-top: 15px;
+            color: gray;
+        }
+	    #footer-note {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: #555;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>LookUp</h1>
+    <input id="searchBox" type="text" placeholder="ٍSearch with LookUp..." />
+    <div class="buttons">
+        <button id="voiceBtn">🎤 Voice Search</button>
+        <button id="goBtn">Go</button>
+    </div>
+    <div id="status"></div>
+    <div id="footer-note">Built with ❤️ by KSU students</div>
+    <script>
+        const voiceBtn = document.getElementById('voiceBtn');
+        const goBtn = document.getElementById('goBtn');
+        const searchBox = document.getElementById('searchBox');
+        const status = document.getElementById('status');
+
+        const fields = {
+            "information technology": "result.html?field=Information%20Technology",
+            "computer science": "result.html?field=Computer%20Science",
+            "information systems": "result.html?field=Information%20Systems",
+            "computer engineering": "result.html?field=Computer%20Engineering",
+            "software engineering": "result.html?field=Software%20Engineering"
+        };
+
+        let recognizedField = '';
+
+        if (!('webkitSpeechRecognition' in window)) {
+            voiceBtn.disabled = true;
+            status.innerText = "Voice recognition not supported.";
+        } else {
+            const recognition = new webkitSpeechRecognition();
+            recognition.lang = "en-US";
+            recognition.interimResults = false;
+
+            voiceBtn.onclick = () => {
+                recognition.start();
+                status.innerText = "Listening...";
+            };
+
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript.toLowerCase().trim();
+                searchBox.value = transcript;
+                recognizedField = transcript;
+                status.innerText = "Click 'Go' to view result.";
+            };
+
+            recognition.onerror = (event) => {
+                status.innerText = "Error occurred: " + event.error;
+            };
+        }
+
+        goBtn.onclick = () => {
+            const input = searchBox.value.toLowerCase().trim();
+            if (fields[input]) {
+                window.location.href = fields[input];
+            } else {
+                status.innerText = "No result found. Try saying one of the supported fields.";
+            }
+        };
+    </script>
+</body>
+</html>

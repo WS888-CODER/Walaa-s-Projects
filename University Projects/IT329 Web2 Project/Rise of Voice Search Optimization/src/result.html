@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LookUp Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .left {
+            flex: 2;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h1 {
+            color: #4285f4;
+            margin-top: 0;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .image-box {
+            width: 80%;
+            aspect-ratio: 1 / 1;
+            background-color: #ddd;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            height: 180px;
+			width: 350px;
+        }
+
+        .highlight {
+            display: block;
+            color: #4285f4;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h1 id="fieldTitle">Field</h1>
+        <p id="fieldDescription">Loading...</p>
+    </div>
+
+    <div class="right">
+        <div class="image-box" id="img1"></div>
+        <div class="image-box" id="img2"></div>
+        <div class="image-box" id="img3"></div>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const field = params.get("field");
+
+        const descriptions = {
+            "Information Technology": "<span class='highlight'>BEST MAJOR EVER ❤️❤️</span>Information technology (IT) is a dynamic and essential field that focuses on the use of computers, software, and networks to manage and process information. It involves both theoretical and practical aspects, including network administration, cybersecurity, database management, and IT support. IT professionals work on solving complex problems, developing innovative solutions, and improving existing systems to enhance efficiency and security. This field plays a crucial role in various industries, from healthcare and finance to education and retail, driving technological advancements and shaping the future of business operations. By leveraging technology to manage information, IT professionals ensure the smooth operation of systems and the protection of sensitive data, making IT indispensable in today's digital world.",
+            
+            "Computer Science": "Computer science is a dynamic and ever-evolving field that encompasses the study of computers and computational systems. It involves both theoretical and practical aspects, including algorithms, data structures, software engineering, artificial intelligence, and machine learning. Computer scientists work on solving complex problems, developing new technologies, and improving existing systems to enhance efficiency and functionality. The field plays a crucial role in various industries, from healthcare and finance to entertainment and education, driving innovation and shaping the future of technology. Whether it's creating sophisticated software, securing data, or exploring the capabilities of artificial intelligence, computer science is at the forefront of technological advancement.",
+            
+            "Information Systems": "Information systems is a dynamic and ever-evolving field that encompasses the study of how technology can be used to manage and process information. It involves both theoretical and practical aspects, including database management, systems analysis and design, information security, and business intelligence. Information systems professionals work on solving complex problems, developing new technologies, and improving existing systems to enhance efficiency and functionality. The field plays a crucial role in various industries, from healthcare and finance to retail and education, driving innovation and shaping the future of business operations. Whether it's creating sophisticated databases, securing sensitive information, or analyzing data to support decision-making, information systems is at the forefront of technological advancement.",
+            
+            "Computer Engineering": "Computer engineering is a dynamic and interdisciplinary field that merges electrical engineering and computer science principles to design and optimize computer systems and hardware. It encompasses digital logic design, microprocessor architecture, embedded systems, and hardware-software integration. Computer engineers tackle complex problems, develop innovative technologies, and enhance existing systems to improve performance and efficiency. This field is pivotal in various industries, including telecommunications, automotive, healthcare, and consumer electronics, driving technological advancements and shaping the future. By bridging the gap between hardware and software, computer engineers create smarter, faster, and more efficient solutions that impact our daily lives.",
+            
+            "Software Engineering": "Software engineering is a dynamic and essential field that focuses on the systematic design, development, testing, and maintenance of software systems. It involves both theoretical and practical aspects, including software architecture, programming, project management, and quality assurance. Software engineers work on solving complex problems, creating innovative applications, and improving existing software to enhance functionality and user experience. This field plays a crucial role in various industries, from healthcare and finance to entertainment and education, driving technological advancements and shaping the future of digital solutions. By applying engineering principles to software development, software engineers ensure the creation of reliable, efficient, and scalable software that meets the needs of users and businesses alike."
+        };
+
+        const images = {
+            "Information Technology": [
+                "img/it1.jpg", "img/it2.jpg", "img/it3.jpg"
+            ],
+            "Computer Science": [
+                "img/cs1.jpg", "img/cs2.jpg", "img/cs3.jpg"
+            ],
+            "Information Systems": [
+                "img/is1.jpg", "img/is2.jpg", "img/is3.jpg"
+            ],
+            "Computer Engineering": [
+                "img/ce1.jpg", "img/ce2.jpg", "img/ce3.jpg"
+            ],
+            "Software Engineering": [
+                "img/se1.jpg", "img/se2.jpg", "img/se3.jpg"
+            ]
+        };
+
+        if (field && descriptions[field]) {
+            document.getElementById('fieldTitle').textContent = field;
+            document.getElementById('fieldDescription').innerHTML = descriptions[field];
+
+            const imgs = images[field];
+            document.getElementById('img1').style.backgroundImage = `url('${imgs[0]}')`;
+            document.getElementById('img2').style.backgroundImage = `url('${imgs[1]}')`;
+            document.getElementById('img3').style.backgroundImage = `url('${imgs[2]}')`;
+        } else {
+            document.getElementById('fieldTitle').textContent = "Not Found";
+            document.getElementById('fieldDescription').textContent = "Sorry, no information available for this field.";
+        }
+    </script>
+</body>
+</html>
