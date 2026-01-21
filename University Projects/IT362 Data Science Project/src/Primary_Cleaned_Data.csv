@@ -1,0 +1,551 @@
+Rank,Title,Year,IMDb Rating,Votes,Genre,Runtime
+1,The Shawshank Redemption,1994,8.708,27655,"Drama, Crime",142
+2,The Godfather,1972,8.688,20970,"Drama, Crime",175
+3,The Godfather Part II,1974,8.57,12656,"Drama, Crime",202
+4,Schindler's List,1993,8.567,16109,"Drama, History, War",195
+5,12 Angry Men,1957,8.546,8847,Drama,97
+6,Spirited Away,2001,8.538,16786,"Animation, Family, Fantasy",125
+7,Dilwale Dulhania Le Jayenge,1995,8.522,4458,"Comedy, Drama, Romance",190
+8,The Dark Knight,2008,8.5,33346,"Drama, Action, Crime, Thriller",152
+9,The Green Mile,1999,8.507,17756,"Fantasy, Drama, Crime",189
+10,Parasite,2019,8.502,18600,"Comedy, Thriller, Drama",133
+11,Pulp Fiction,1994,8.5,28267,"Thriller, Crime",154
+12,Your Name.,2016,8.5,11560,"Animation, Romance, Drama",106
+13,The Lord of the Rings: The Return of the King,2003,8.483,24596,"Adventure, Fantasy, Action",201
+14,Forrest Gump,1994,8.469,27790,"Comedy, Drama, Romance",142
+15,"The Good, the Bad and the Ugly",1966,8.462,8780,Western,161
+16,Seven Samurai,1954,8.457,3780,"Action, Drama",207
+17,GoodFellas,1990,8.458,13072,"Drama, Crime",145
+18,Grave of the Fireflies,1988,8.5,5692,"Animation, Drama, War",89
+19,Interstellar,2014,8.4,36386,"Adventure, Drama, Science Fiction",169
+20,Life Is Beautiful,1997,8.448,13168,"Comedy, Drama",116
+21,Cinema Paradiso,1988,8.445,4439,"Drama, Romance",124
+22,Fight Club,1999,8.438,29782,Drama,139
+23,Impossible Things,2021,8.4,393,"Family, Drama",88
+24,A Dog's Will,2000,8.4,1129,"Comedy, Drama, Fantasy",104
+25,City of God,2002,8.425,7491,"Drama, Crime",129
+26,Psycho,1960,8.424,10184,"Horror, Thriller, Mystery",109
+27,The Lord of the Rings: The Fellowship of the Ring,2001,8.418,25551,"Adventure, Fantasy, Action",179
+28,Once Upon a Time in America,1984,8.418,5477,"Drama, Crime",229
+29,One Flew Over the Cuckoo's Nest,1975,8.414,10575,Drama,133
+30,Gabriel's Inferno,2020,8.4,2416,"Romance, Drama",122
+31,Harakiri,1962,8.411,1030,"Action, Drama, History",135
+32,Howl's Moving Castle,2004,8.402,10068,"Fantasy, Animation, Adventure",119
+33,Primal: Tales of Savagery,2019,8.401,324,"Action, Adventure, Animation, Drama",85
+34,The Lord of the Rings: The Two Towers,2002,8.4,22177,"Adventure, Fantasy, Action",179
+35,Spider-Man: Into the Spider-Verse,2018,8.4,15859,"Animation, Action, Adventure, Science Fiction",117
+36,The Empire Strikes Back,1980,8.4,17149,"Adventure, Action, Science Fiction",124
+37,Gabriel's Inferno: Part II,2020,8.383,1519,"Romance, Drama",106
+38,A Silent Voice: The Movie,2016,8.4,4020,"Animation, Drama, Romance",129
+39,Hope,2013,8.4,749,Drama,122
+40,The Pianist,2002,8.4,9312,"Drama, War",150
+41,Gabriel's Inferno: Part III,2020,8.378,1057,"Romance, Drama",102
+42,Whiplash,2014,8.378,15352,"Drama, Music",107
+43,Se7en,1995,8.4,21334,"Crime, Mystery, Thriller",127
+44,Radical,2023,8.4,437,Drama,126
+45,Inception,2010,8.4,36985,"Action, Science Fiction, Adventure",148
+46,Flow,2024,8.4,1035,"Animation, Fantasy, Adventure",85
+47,The Quintessential Quintuplets Movie,2022,8.356,400,"Animation, Comedy, Romance",136
+48,The Wild Robot,2024,8.4,4211,"Animation, Action, Science Fiction, Family",102
+49,The Legend of Hei,2019,8.356,378,"Animation, Fantasy, Action",102
+50,Spider-Man: Across the Spider-Verse,2023,8.352,7257,"Animation, Action, Adventure, Science Fiction",140
+51,Rear Window,1954,8.3,6572,"Thriller, Mystery",112
+52,The Silence of the Lambs,1991,8.3,16513,"Crime, Drama, Thriller",119
+53,American History X,1998,8.341,11687,Drama,119
+54,Dou kyu sei – Classmates,2016,8.338,397,"Romance, Animation",61
+55,High and Low,1963,8.333,936,"Drama, Crime, Mystery",142
+56,Princess Mononoke,1997,8.334,8141,"Adventure, Fantasy, Animation",134
+57,Back to the Future,1985,8.317,20192,"Adventure, Comedy, Science Fiction",116
+58,A Brighter Summer Day,1991,8.3,326,"Crime, Drama, Romance",237
+59,Dedicated to my ex,2019,8.3,502,"Drama, Comedy",94
+60,Ikiru,1952,8.3,1163,Drama,143
+61,Dead Poets Society,1989,8.304,11436,Drama,128
+62,Léon: The Professional,1994,8.305,14967,"Crime, Drama, Action",111
+63,Perfect Blue,1998,8.305,2715,"Animation, Thriller",82
+64,The Great Dictator,1940,8.3,3405,"Comedy, War",125
+65,Sunset Boulevard,1950,8.3,2621,Drama,110
+66,Once Upon a Studio,2023,8.293,362,"Animation, Family, Fantasy, Comedy",9
+67,"Josee, the Tiger and the Fish",2020,8.3,482,"Animation, Drama, Romance",98
+68,Hotarubi no Mori e,2011,8.286,1119,"Romance, Animation, Fantasy",45
+69,Once Upon a Time in the West,1968,8.286,4413,"Drama, Western",166
+70,Neon Genesis Evangelion: The End of Evangelion,1997,8.3,1636,"Animation, Science Fiction, Action, Drama",87
+71,Given,2020,8.289,393,"Animation, Drama, Music, Romance",60
+72,Modern Times,1936,8.282,3732,"Comedy, Drama, Romance",87
+73,We All Loved Each Other So Much,1974,8.3,575,"Drama, Comedy",124
+74,City Lights,1931,8.275,2202,"Comedy, Drama, Romance",87
+75,The Intouchables,2011,8.274,17394,"Drama, Comedy",113
+76,It's a Wonderful Life,1946,8.3,4423,"Drama, Family, Fantasy",130
+77,Apocalypse Now,1979,8.272,8325,"Drama, War",147
+78,Taylor Swift: Reputation Stadium Tour,2018,8.3,396,Music,125
+79,Miracle in Cell No. 7,2019,8.3,4425,Drama,132
+80,Paths of Glory,1957,8.26,2962,"War, Drama, History",88
+81,The Legend of 1900,1998,8.3,2277,"Drama, Music",170
+82,The Lion King,1994,8.255,18516,"Family, Animation, Drama",89
+83,TAYLOR SWIFT | THE ERAS TOUR,2023,8.3,429,Music,169
+84,Violet Evergarden: The Movie,2020,8.3,415,"Animation, Fantasy, Romance, Drama",140
+85,Oldboy,2003,8.255,8814,"Drama, Thriller, Mystery, Action",120
+86,Clouds,2020,8.25,1009,"Music, Drama, Romance",121
+87,Come and See,1985,8.252,1536,"Drama, War",142
+88,"The Boy, the Mole, the Fox and the Horse",2022,8.244,602,"Animation, Family, Adventure, Fantasy",35
+89,Life in a Year,2020,8.247,1894,"Drama, Romance",107
+90,Evangelion: 3.0+1.0 Thrice Upon a Time,2021,8.2,822,"Animation, Action, Science Fiction, Drama",155
+91,Le Trou,1960,8.245,488,"Drama, Thriller, Crime",132
+92,Rascal Does Not Dream of a Dreaming Girl,2019,8.2,527,"Animation, Romance, Drama, Fantasy",90
+93,Five Feet Apart,2019,8.2,5665,"Romance, Drama",116
+94,Avengers: Endgame,2019,8.242,25959,"Adventure, Science Fiction, Action",181
+95,Klaus,2019,8.242,4182,"Animation, Family, Adventure, Comedy, Fantasy",96
+96,Green Book,2018,8.24,11778,"Drama, History",130
+97,Avengers: Infinity War,2018,8.239,30115,"Adventure, Action, Science Fiction",149
+98,I Want to Eat Your Pancreas,2018,8.2,1577,"Animation, Drama, Romance",108
+99,Mommy,2014,8.235,2730,Drama,138
+100,Out of the Clear Blue Sky,2019,8.232,353,"Comedy, Drama, Music",112
+101,Wolf Children,2012,8.224,2301,"Animation, Family, Drama, Fantasy",117
+102,Il Sorpasso,1962,8.2,767,"Drama, Comedy",105
+103,The Matrix,1999,8.221,25990,"Action, Science Fiction",136
+104,Puss in Boots: The Last Wish,2022,8.22,7982,"Animation, Adventure, Fantasy, Comedy, Family",103
+105,Woman in the Dunes,1964,8.217,458,"Drama, Thriller",147
+106,Wolfwalkers,2020,8.219,1211,"Animation, Family, Adventure, Fantasy",103
+107,Saving Private Ryan,1998,8.2,16009,"Drama, History, War",169
+108,Justice League Dark: Apokolips War,2020,8.2,1472,"Animation, Action, Science Fiction",90
+109,Gladiator,2000,8.2,19304,"Action, Drama, Adventure",155
+110,Inglourious Basterds,2009,8.216,22504,"Drama, Thriller, War",153
+111,Ultraman: Rising,2024,8.215,300,"Animation, Science Fiction, Family, Action",117
+112,Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train,2020,8.213,3993,"Animation, Action, Fantasy, Thriller",117
+113,The Shining,1980,8.213,17675,"Horror, Thriller",144
+114,The Help,2011,8.2,8392,Drama,146
+115,Witness for the Prosecution,1957,8.21,1436,"Drama, Mystery, Crime",116
+116,The Handmaiden,2016,8.208,3812,"Thriller, Drama, Romance",145
+117,Coco,2017,8.207,19713,"Family, Animation, Music, Adventure",105
+118,The Prestige,2006,8.204,16239,"Drama, Mystery, Science Fiction",130
+119,Star Wars,1977,8.2,20848,"Adventure, Action, Science Fiction",121
+120,Shutter Island,2010,8.201,24197,"Drama, Thriller, Mystery",138
+121,The Art of Racing in the Rain,2019,8.2,1502,"Drama, Romance",109
+122,Michael Jackson's Thriller,1983,8.2,688,"Horror, Music, Mystery",14
+123,Hacksaw Ridge,2016,8.195,13897,"Drama, History, War",139
+124,The Apartment,1960,8.194,2355,"Comedy, Drama, Romance",125
+125,My Mom Is a Character 3,2019,8.192,475,Comedy,111
+126,Maquia: When the Promised Flower Blooms,2018,8.2,637,"Animation, Fantasy, Drama, Adventure",115
+127,Doctor Who: The Day of the Doctor,2013,8.2,750,"Science Fiction, Adventure",77
+128,Top Gun: Maverick,2022,8.189,9529,"Action, Drama",131
+129,A Clockwork Orange,1971,8.188,12972,"Science Fiction, Crime",137
+130,Violet Evergarden: Eternity and the Auto Memory Doll,2019,8.186,376,"Drama, Fantasy, Animation",91
+131,The Seventh Seal,1957,8.2,3027,"Fantasy, Drama",96
+132,Django Unchained,2012,8.183,26455,"Drama, Western",165
+133,Bicycle Thieves,1948,8.179,2443,Drama,89
+134,Memento,2000,8.18,15038,"Mystery, Thriller",113
+135,The Usual Suspects,1995,8.177,10506,"Drama, Crime, Thriller",106
+136,Tokyo Story,1953,8.175,1080,Drama,137
+137,Hamilton,2020,8.174,1439,"History, Drama",160
+138,Investigation of a Citizen Above Suspicion,1970,8.2,795,"Drama, Thriller",111
+139,20th Century Girl,2022,8.17,710,"Romance, Drama",119
+140,My Hero Academia: Heroes Rising,2019,8.2,1177,"Animation, Action, Fantasy, Adventure",104
+141,Persona,1966,8.2,2171,Drama,83
+142,The Kid,1921,8.164,2130,"Comedy, Drama",68
+143,Scarface,1983,8.163,11987,"Action, Crime, Drama",169
+144,Good Will Hunting,1997,8.161,12545,Drama,127
+145,Vertigo,1958,8.161,5799,"Mystery, Romance, Thriller",128
+146,Alien,1979,8.2,15007,"Horror, Science Fiction",117
+147,The Departed,2006,8.16,15062,"Drama, Thriller, Crime",151
+148,Innocent Voices,2005,8.157,489,"Drama, War",120
+149,Casablanca,1943,8.158,5515,"Drama, Romance",102
+150,Capernaum,2018,8.155,1732,Drama,126
+151,Dune: Part Two,2024,8.151,6185,"Science Fiction, Adventure",167
+152,Steven Universe: The Movie,2019,8.15,785,"TV Movie, Adventure, Animation, Comedy, Fantasy, Music, Science Fiction",82
+153,Piper,2016,8.149,1639,"Family, Animation",6
+154,Togo,2019,8.1,2056,"Adventure, Family",113
+155,The Truman Show,1998,8.1,18568,"Comedy, Drama",103
+156,Jujutsu Kaisen 0,2021,8.143,1443,"Animation, Action, Fantasy",105
+157,Singin' in the Rain,1952,8.1,3179,"Comedy, Romance",103
+158,Joker,2019,8.142,26075,"Crime, Thriller, Drama",122
+159,There's Still Tomorrow,2023,8.1,1296,"Drama, Comedy, War, History",118
+160,Silenced,2011,8.141,654,Drama,125
+161,My Friends,1975,8.1,704,Comedy,140
+162,8½,1963,8.1,2305,Drama,139
+163,Taxi Driver,1976,8.1,12411,"Crime, Drama",114
+164,Bound by Honor,1993,8.135,1375,"Crime, Action, Drama, Thriller",180
+165,The Shop Around the Corner,1940,8.1,737,"Comedy, Drama, Romance",99
+166,Scenes from a Marriage,1974,8.1,352,"Drama, Romance",169
+167,Green Snake,2021,8.13,311,"Animation, Fantasy, Action, Adventure",131
+168,Zack Snyder's Justice League,2021,8.1,10103,"Action, Adventure, Fantasy",242
+169,Central Station,1998,8.1,927,Drama,110
+170,Stalker,1979,8.1,2211,"Science Fiction, Drama",162
+171,Red Beard,1965,8.127,365,Drama,185
+172,Full Metal Jacket,1987,8.127,10604,"Drama, War",117
+173,Wild Strawberries,1957,8.129,1653,Drama,91
+174,Palmer,2021,8.121,1639,Drama,110
+175,Wonder,2017,8.124,7912,"Drama, Family",113
+176,Call Me by Your Name,2017,8.1,12169,"Romance, Drama",132
+177,Reservoir Dogs,1992,8.12,14420,"Crime, Thriller",99
+178,Terminator 2: Judgment Day,1991,8.119,13069,"Action, Thriller, Science Fiction",137
+179,Portrait of a Lady on Fire,2019,8.1,2598,"Drama, Romance, History",121
+180,The Father,2020,8.1,3231,Drama,97
+181,Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb,1964,8.116,5680,"Comedy, War",95
+182,Soul,2020,8.116,10595,"Animation, Family, Comedy, Fantasy",101
+183,"Lock, Stock and Two Smoking Barrels",1998,8.116,6651,"Comedy, Crime",105
+184,Better Days,2019,8.117,462,"Drama, Crime, Romance",135
+185,The Hate U Give,2018,8.1,2134,"Crime, Drama",133
+186,Double Indemnity,1944,8.11,1822,"Crime, Thriller",107
+187,Metropolis,1927,8.111,2800,"Drama, Science Fiction",148
+188,The Great War,1959,8.1,344,"Comedy, War, Drama",137
+189,Big Deal on Madonna Street,1958,8.108,708,"Comedy, Crime",106
+190,In the Mood for Love,2000,8.106,2782,"Drama, Romance",99
+191,The Invisible Guest,2017,8.104,4589,"Drama, Mystery, Thriller",107
+192,"“The Shorts” by Aldo, Giovanni and Giacomo",1996,8.104,347,Comedy,120
+193,Purple Hearts,2022,8.103,2596,"Romance, Drama",122
+194,The Best of Youth,2003,8.1,544,"Drama, History, Romance",367
+195,Transformers One,2024,8.1,1057,"Animation, Science Fiction, Adventure, Family",104
+196,Mortal Kombat Legends: Scorpion's Revenge,2020,8.102,1383,"Animation, Action, Fantasy",80
+197,Incendies,2010,8.101,2804,"Drama, War, Mystery",131
+198,Sansho the Bailiff,1954,8.099,379,Drama,124
+199,Prisoners,2013,8.1,11928,"Drama, Thriller, Crime",153
+200,WALL·E,2008,8.096,18965,"Animation, Family, Science Fiction",98
+201,"Paris, Texas",1984,8.1,1909,Drama,145
+202,The Tale of The Princess Kaguya,2013,8.093,1799,"Animation, Drama, Fantasy",137
+203,Yojimbo,1961,8.093,1482,"Drama, Thriller",110
+204,Some Like It Hot,1959,8.094,3512,"Comedy, Romance, Crime",122
+205,Eternal Sunshine of the Spotless Mind,2004,8.093,15156,"Science Fiction, Drama, Romance",108
+206,The Hunt,2012,8.092,4251,Drama,116
+207,Harry Potter and the Deathly Hallows: Part 2,2011,8.09,20768,"Fantasy, Adventure",130
+208,All About Eve,1950,8.091,1551,Drama,139
+209,La Haine,1995,8.087,4104,Drama,98
+210,Das Boot,1981,8.084,2241,"Drama, History, War",150
+211,New Gods: Nezha Reborn,2021,8.1,437,"Animation, Action, Fantasy",116
+212,Children of Paradise,1945,8.1,417,"Drama, Romance",190
+213,"Miraculous World: New York, United HeroeZ",2020,8.1,1100,"Animation, TV Movie, Fantasy, Action",61
+214,Far from the Tree,2021,8.08,375,"Animation, Family",7
+215,Along with the Gods: The Last 49 Days,2018,8.1,676,"Action, Adventure, Fantasy, Thriller",141
+216,KONOSUBA – God's blessing on this wonderful world! Legend of Crimson,2019,8.1,551,"Animation, Adventure, Comedy, Fantasy",90
+217,A Taxi Driver,2017,8.1,1006,"Action, Drama, History",138
+218,M,1931,8.1,2209,"Drama, Thriller, Crime",111
+219,Guillermo del Toro's Pinocchio,2022,8.074,2968,"Animation, Fantasy, Drama",117
+220,Oppenheimer,2023,8.1,9751,"Drama, History",181
+221,La Dolce Vita,1960,8.1,1877,"Comedy, Drama",176
+222,There Will Be Blood,2007,8.1,6706,Drama,158
+223,Sherlock Jr.,1924,8.069,1007,"Action, Comedy, Mystery",45
+224,Believe Me: The Abduction of Lisa McVey,2018,8.07,629,"Drama, TV Movie, Crime",98
+225,"Three Billboards Outside Ebbing, Missouri",2017,8.069,10167,"Crime, Drama",115
+226,My Neighbor Totoro,1988,8.069,8071,"Fantasy, Animation, Family",86
+227,Rashomon,1950,8.1,2255,"Crime, Drama, Mystery",88
+228,Along with the Gods: The Two Worlds,2017,8.1,1062,"Action, Adventure, Drama, Fantasy, Thriller",139
+229,Pride & Prejudice,2005,8.1,8106,"Drama, Romance",129
+230,2001: A Space Odyssey,1968,8.067,11652,"Science Fiction, Mystery, Adventure",149
+231,Prayers for Bobby,2009,8.1,581,"Drama, History, TV Movie",89
+232,The Thing,1982,8.066,7114,"Horror, Mystery, Science Fiction",109
+233,Lion,2016,8.065,6582,Drama,118
+234,A Dog's Journey,2019,8.1,1533,"Family, Adventure, Drama",109
+235,Hidden Figures,2016,8.058,9799,"Drama, History",127
+236,Memories of Murder,2003,8.059,3886,"Crime, Drama, Thriller",131
+237,Me Against You: Mr. S's Vendetta,2020,8.056,467,"Family, Fantasy",64
+238,A Special Day,1977,8.056,664,"Drama, Romance",106
+239,Ran,1985,8.1,1568,"Action, Drama, History",160
+240,The Count of Monte Cristo,2024,8.055,1361,"Action, Adventure, Drama",178
+241,Ayla: The Daughter of War,2017,8.049,364,"Drama, War, History",124
+242,The Young and the Damned,1950,8.047,490,"Drama, Crime",82
+243,Elite Squad,2007,8.046,2445,"Drama, Action, Crime",115
+244,Bo Burnham: Make Happy,2016,8.0,384,"Comedy, Music",60
+245,The Second Mother,2015,8.044,733,Drama,112
+246,My Name Is Khan,2010,8.0,1322,"Drama, Romance",165
+247,Paper Lives,2021,8.0,382,Drama,96
+248,The Grand Budapest Hotel,2014,8.043,14934,"Comedy, Drama",100
+249,Judgment at Nuremberg,1961,8.037,805,"Drama, History",191
+250,To Live,1994,8.0,319,"Drama, Romance, War",133
+251,The Elephant Man,1980,8.0,3547,"Drama, History",124
+252,Amadeus,1984,8.0,4281,"History, Music, Drama",160
+253,The Lives of Others,2006,8.033,3712,"Drama, Thriller",137
+254,On My Skin,2018,8.031,1857,Drama,100
+255,The Wolf of Wall Street,2013,8.0,24258,"Crime, Drama, Comedy",180
+256,The 400 Blows,1959,8.0,2159,Drama,99
+257,How to Train Your Dragon: Homecoming,2019,8.0,974,"Animation, Fantasy, Adventure, Action, Family",22
+258,The Sting,1973,8.0,2638,"Comedy, Crime, Drama",129
+259,Robot Dreams,2023,8.0,611,"Animation, Drama, Comedy, Science Fiction",102
+260,Bo Burnham: Inside,2021,8.0,510,"Comedy, Drama",87
+261,Beyond the Universe,2022,8.023,323,"Romance, Drama",126
+262,"Veinteañera, divorciada y fantástica",2020,8.0,387,Comedy,93
+263,The Wages of Fear,1953,8.018,963,"Drama, Thriller, Adventure",153
+264,Rocco and His Brothers,1960,8.0,597,"Drama, Romance",178
+265,Gifted,2017,8.021,5556,"Drama, Comedy",101
+266,Dial M for Murder,1954,8.02,2615,"Thriller, Crime",105
+267,"Toto, Peppino, and the Hussy",1956,8.0,351,"Comedy, Romance",101
+268,Jojo Rabbit,2019,8.015,9645,"Comedy, War, Drama",108
+269,For a Few Dollars More,1965,8.0,4030,Western,132
+270,Flipped,2010,8.0,3053,"Romance, Drama",89
+271,Harry Potter and the Prisoner of Azkaban,2004,8.014,21818,"Adventure, Fantasy",141
+272,Requiem for a Dream,2000,8.015,10082,"Crime, Drama",102
+273,"Rome, Open City",1945,8.014,888,"Drama, War",103
+274,Room,2015,8.013,9234,"Drama, Thriller",118
+275,El mesero,2021,8.0,350,Comedy,86
+276,American Beauty,1999,8.011,12143,Drama,122
+277,Hachi: A Dog's Tale,2009,8.007,6748,"Drama, Family",93
+278,Society of the Snow,2023,8.0,3043,"Drama, History",144
+279,Song of the Sea,2014,8.007,1436,"Family, Animation, Fantasy",94
+280,Ford v Ferrari,2019,8.0,8109,"Drama, Action, History",153
+281,Casino,1995,8.0,5905,"Crime, Drama",179
+282,Weathering with You,2019,8.0,2329,"Animation, Drama, Fantasy, Romance",112
+283,Cruella,2021,8.001,9433,"Comedy, Crime, Family, Adventure",134
+284,3 Idiots,2009,8.0,2417,"Drama, Comedy",171
+285,Barry Lyndon,1975,8.001,2853,"Drama, Romance, War, History",185
+286,"Love, Simon",2018,8.0,6052,"Comedy, Drama, Romance",110
+287,Death Note Relight 1: Visions of a God,2007,8.0,328,"TV Movie, Crime, Drama, Fantasy, Thriller, Animation",131
+288,All Your Faces,2023,7.999,583,Drama,115
+289,Black Beauty,2020,8.0,339,Drama,110
+290,Tae Guk Gi: The Brotherhood of War,2004,8.004,680,"Action, Adventure, Drama, History, War",148
+291,Loving Vincent,2017,7.998,2466,"Animation, Drama, Mystery, History",95
+292,Late Spring,1949,8.0,424,Drama,110
+293,Lawrence of Arabia,1962,7.997,3060,"Adventure, History, War",228
+294,Citizen Kane,1941,7.998,5574,"Mystery, Drama",119
+295,The Imitation Game,2014,7.996,17131,"History, Drama, Thriller, War",113
+296,Paperman,2012,7.996,1724,"Animation, Family, Romance",7
+297,Sound of Freedom,2023,8.0,2476,"Action, Drama",131
+298,Kill Bill: The Whole Bloody Affair,2011,8.0,1031,"Action, Crime, Thriller",247
+299,The Deer Hunter,1978,7.993,3849,"Drama, War",183
+300,To Kill a Mockingbird,1962,8.0,2632,Drama,129
+301,The Secret in Their Eyes,2009,8.0,2567,"Mystery, Thriller, Drama",130
+302,Gran Torino,2008,7.99,10775,Drama,116
+303,Autumn Sonata,1978,8.0,617,Drama,93
+304,"Red, White & Royal Blue",2023,7.988,1315,"Comedy, Romance",121
+305,1917,2019,7.988,12549,"War, History, Thriller, Drama",119
+306,In a Heartbeat,2017,8.0,995,"Animation, Romance, Comedy",4
+307,Nights of Cabiria,1957,7.988,771,Drama,110
+308,The Passion of Joan of Arc,1928,7.982,958,"Drama, History",82
+309,Bingo: The King of the Mornings,2017,7.986,389,"Comedy, Drama",113
+310,Scooby-Doo! and Kiss: Rock and Roll Mystery,2015,8.0,320,"Family, Animation, Comedy, Mystery",79
+311,Like Stars on Earth,2007,7.986,1181,Drama,162
+312,Love Exposure,2009,8.0,447,"Action, Comedy, Drama, Romance",237
+313,The Gold Rush,1925,7.981,1625,"Adventure, Comedy, Drama",95
+314,Bohemian Rhapsody,2018,7.982,16956,"Music, Drama",135
+315,Ugetsu,1953,8.0,578,"Fantasy, Drama, Mystery",96
+316,North by Northwest,1959,7.98,4138,"Thriller, Adventure",136
+317,Andrei Rublev,1966,8.0,836,"Drama, History",205
+318,Catch Me If You Can,2002,7.98,15814,"Drama, Crime",141
+319,Chungking Express,1994,8.0,1850,"Drama, Comedy, Romance",103
+320,Castle in the Sky,1986,7.974,4248,"Adventure, Fantasy, Animation, Action, Family",125
+321,Mirror,1975,7.974,962,"Drama, History",106
+322,Nobody Knows,2004,7.969,534,Drama,141
+323,Kill Bill: Vol. 1,2003,7.971,17581,"Action, Crime",111
+324,Toy Story,1995,7.97,18580,"Animation, Adventure, Family, Comedy",81
+325,Monster,2023,7.969,616,"Mystery, Thriller, Drama",125
+326,Before Sunrise,1995,8.0,4200,"Drama, Romance",101
+327,Flamin' Hot,2023,7.971,684,"Drama, History",99
+328,Kitbull,2019,8.0,369,"Animation, Family, Drama",9
+329,Three Men and a Leg,1997,8.0,2081,Comedy,98
+330,Castaway on the Moon,2009,7.963,676,"Drama, Comedy, Romance",119
+331,Trainspotting,1996,7.961,9710,"Drama, Crime",94
+332,The Boy and the Beast,2015,7.959,1491,"Action, Adventure, Animation, Drama, Family, Fantasy",119
+333,La Notte,1961,8.0,675,"Drama, Romance",122
+334,Up,2009,7.959,20398,"Animation, Comedy, Family, Adventure",96
+335,Pink Floyd: The Wall,1982,7.958,1498,"Music, Drama",95
+336,The Hidden Fortress,1958,8.0,625,"Drama, Action, Adventure",139
+337,The Circus,1928,8.0,802,"Comedy, Family, Romance",72
+338,Guardians of the Galaxy Vol. 3,2023,7.956,7094,"Science Fiction, Adventure, Action",150
+339,Million Dollar Baby,2004,7.954,9663,Drama,132
+340,The Treasure of the Sierra Madre,1948,7.953,1215,"Adventure, Drama, Western",126
+341,The General,1926,7.951,1264,"Comedy, Action, Adventure, War",79
+342,The Sixth Sense,1999,7.952,11842,"Mystery, Thriller, Drama",107
+343,Spider-Man: No Way Home,2021,8.0,20448,"Action, Adventure, Science Fiction",148
+344,The Red Shoes,1948,8.0,669,"Drama, Romance",133
+345,Aliens,1986,8.0,9919,"Action, Thriller, Science Fiction",137
+346,Jurassic Park,1993,7.951,16469,"Adventure, Science Fiction",127
+347,The Way He Looks,2014,8.0,941,"Drama, Romance",96
+348,Tel chi el telùn,1999,8.0,322,Comedy,120
+349,Dersu Uzala,1975,7.95,547,"Action, Adventure, Drama",141
+350,The Iron Giant,1999,7.949,5660,"Family, Animation, Science Fiction, Adventure",86
+351,Nausicaä of the Valley of the Wind,1984,8.0,3637,"Adventure, Animation, Fantasy",117
+352,Whisper of the Heart,1995,7.948,2021,"Animation, Drama, Family",111
+353,Miracle in Cell No. 7,2013,7.947,445,"Drama, Comedy",127
+354,The Cure,1995,7.947,309,"Drama, Family",97
+355,Suzume,2022,7.9,1378,"Animation, Drama, Adventure, Fantasy",121
+356,Sanjuro,1962,7.945,620,"Drama, Action, Comedy",96
+357,Akira,1988,7.945,4297,"Animation, Science Fiction, Action",124
+358,A Man Escaped,1956,7.944,543,"Drama, Thriller",101
+359,The Great Escape,1963,7.9,2578,"Adventure, Drama, War",173
+360,No Country for Old Men,2007,7.944,12152,"Crime, Drama, Thriller",122
+361,Raise the Red Lantern,1991,7.9,718,Drama,125
+362,Rope,1948,7.942,2737,"Thriller, Crime, Drama",81
+363,Braveheart,1995,7.9,10238,"Action, Drama, History, War",177
+364,Forgotten,2017,7.9,1133,"Thriller, Mystery, Crime",108
+365,Farewell My Concubine,1993,7.94,588,Drama,171
+366,Pather Panchali,1955,7.927,426,Drama,125
+367,Blade Runner,1982,7.938,13906,"Science Fiction, Drama, Thriller",118
+368,CODA,2021,7.938,2281,"Drama, Music, Romance",112
+369,Ivan Vasilyevich Changes His Profession,1973,7.9,356,"Comedy, Science Fiction",93
+370,Gone with the Wind,1939,7.935,4065,"Drama, War, Romance",233
+371,Nobody,2021,7.936,7196,"Action, Thriller",92
+372,12 Years a Slave,2013,7.936,11323,"Drama, History",134
+373,Cries and Whispers,1972,7.9,694,Drama,95
+374,When Marnie Was There,2014,7.935,1808,"Animation, Drama, Family, Mystery",103
+375,The Exterminating Angel,1962,7.9,672,"Comedy, Drama, Fantasy",93
+376,No Manches Frida 2: Paradise Lost,2019,7.934,883,Comedy,102
+377,Ordet,1955,7.928,367,Drama,125
+378,Ghost in the Shell,1995,7.9,3448,"Action, Animation, Science Fiction",83
+379,Where Hands Touch,2018,7.9,514,"War, Drama, Romance",122
+380,Close-Up,1990,7.933,386,"Crime, Drama",98
+381,The Postman,1994,7.927,1145,"Comedy, Drama, Romance",109
+382,Me Before You,2016,7.9,12485,"Drama, Romance",110
+383,Raging Bull,1980,7.9,4354,Drama,129
+384,Raiders of the Lost Ark,1981,7.926,12602,"Adventure, Action",115
+385,It's Such a Beautiful Day,2012,7.9,326,"Animation, Comedy",62
+386,Love Hurts,2002,7.925,312,"Drama, Romance",104
+387,Where Is The Friend's House?,1987,7.9,363,"Drama, Family",83
+388,Dallas Buyers Club,2013,7.924,8510,"Drama, History",117
+389,Don't Look Now... We're Being Shot At!,1966,7.923,1357,"Comedy, War",132
+390,Freedom Writers,2007,7.923,2225,"Crime, Drama",123
+391,The Cranes Are Flying,1957,7.924,387,"Drama, Romance, War",97
+392,Three Colors: Red,1994,7.918,1408,"Drama, Mystery, Romance",100
+393,My Hero Academia: Two Heroes,2018,7.9,1015,"Animation, Action, Adventure, Fantasy",96
+394,About Time,2013,7.918,8587,"Drama, Romance, Fantasy",123
+395,Army of Shadows,1969,7.9,654,"War, History, Thriller",145
+396,"Batman: The Dark Knight Returns, Part 2",2013,7.916,1489,"Science Fiction, Action, Animation, Mystery",78
+397,Children of Heaven,1997,7.916,630,"Drama, Family",88
+398,Heat,1995,7.9,7404,"Crime, Drama, Action",170
+399,A Trip to the Moon,1902,7.916,1811,"Adventure, Science Fiction",15
+400,The Cabinet of Dr. Caligari,1920,7.915,1611,"Drama, Horror, Thriller, Crime",76
+401,The Cabinet of Dr. Caligari,1920,7.915,1611,"Drama, Horror, Thriller, Crime",76
+402,Amélie,2001,7.9,11618,"Comedy, Romance",122
+403,What Ever Happened to Baby Jane?,1962,7.914,1061,"Thriller, Drama, Horror",135
+404,Unforgiven,1992,7.914,4465,Western,130
+405,Simone: Woman of the Century,2022,7.9,349,"Drama, History",140
+406,Amarcord,1973,7.9,1111,"Comedy, Drama",123
+407,Inside Out,2015,7.912,22219,"Animation, Family, Adventure, Drama, Comedy",95
+408,Throne of Blood,1957,7.912,870,"Drama, History",108
+409,A Street Cat Named Bob,2016,7.9,1448,"Family, Drama",103
+410,Chinatown,1974,7.91,3863,"Crime, Drama, Mystery, Thriller",130
+411,The Third Man,1949,7.9,1887,"Thriller, Mystery",105
+412,Tokyo Godfathers,2003,7.9,1305,"Animation, Drama, Comedy",92
+413,On the Waterfront,1954,7.91,1592,"Crime, Drama, Romance",108
+414,Titanic,1997,7.9,25640,"Drama, Romance",194
+415,My Father's Violin,2022,7.906,330,"Drama, Music",112
+416,Mulan,1998,7.9,9790,"Animation, Family, Adventure",88
+417,The Boy Who Harnessed the Wind,2019,7.9,1688,"Drama, History",113
+418,Guardians of the Galaxy,2014,7.905,28216,"Action, Science Fiction, Adventure",121
+419,In the Name of the Father,1993,7.905,1765,Drama,133
+420,Harry Potter and the Philosopher's Stone,2001,7.9,27837,"Adventure, Fantasy",152
+421,Dogman,2023,7.9,1133,"Action, Drama, Crime",115
+422,In This Corner of the World,2016,7.9,565,"Drama, Animation, Romance, War, History",130
+423,Divorce Italian Style,1961,7.903,470,"Comedy, Crime",104
+424,La La Land,2016,7.9,17031,"Comedy, Drama, Romance, Music",129
+425,Ne Zha,2019,7.9,416,"Animation, Fantasy, Adventure",110
+426,La Strada,1954,7.901,1073,Drama,115
+427,Dangal,2016,7.9,1001,"Drama, Family, Comedy",161
+428,Captain Fantastic,2016,7.899,6442,"Adventure, Drama",118
+429,Yi Yi,2000,7.899,543,"Drama, Comedy",174
+430,Diabolique,1955,7.9,986,"Horror, Thriller, Mystery",117
+431,Ron's Gone Wrong,2021,7.9,1876,"Animation, Science Fiction, Family, Comedy",107
+432,Return of the Jedi,1983,7.9,15824,"Adventure, Action, Science Fiction",132
+433,V for Vendetta,2006,7.898,14595,"Action, Thriller, Science Fiction",132
+434,Bad Genius,2017,7.9,785,"Drama, Crime, Thriller, Comedy",130
+435,Persepolis,2007,7.897,1963,"Animation, Drama",95
+436,Young Woman and the Sea,2024,7.896,322,"History, Drama",129
+437,Dragon Ball Super: Super Hero,2022,7.9,2854,"Animation, Science Fiction, Action",99
+438,La Maison en Petits Cubes,2008,7.896,432,Animation,12
+439,The Mitchells vs. the Machines,2021,7.895,2987,"Animation, Adventure, Comedy",110
+440,The Pursuit of Happyness,2006,7.895,9943,Drama,117
+441,Dragon Ball Super: Broly,2018,7.9,2933,"Action, Science Fiction, Animation",99
+442,A Separation,2011,7.894,1758,Drama,123
+443,Coraline,2009,7.9,8209,"Animation, Family, Fantasy",100
+444,Young Woman and the Sea,2024,7.896,322,"History, Drama",129
+445,Rebecca,1940,7.891,1778,"Mystery, Romance, Thriller, Drama",130
+446,"Remi, Nobody's Boy",2018,7.9,419,"Adventure, Family, Drama",109
+447,Gone Girl,2014,7.9,18775,"Mystery, Thriller, Drama",149
+448,The Notebook,2004,7.889,11663,"Romance, Drama",123
+449,Miraculous World: Shanghai – The Legend of Ladydragon,2021,7.888,646,"Animation, Fantasy, Action, TV Movie",54
+450,Nimona,2023,7.885,1135,"Animation, Family, Action, Science Fiction, Adventure, Fantasy, Drama",99
+451,A Whisker Away,2020,7.9,1386,"Animation, Drama, Romance, Fantasy",104
+452,Thirteen Lives,2022,7.9,1286,"Drama, Thriller",147
+453,El Infierno,2010,7.9,684,"Action, Crime, Western, Comedy, Drama",148
+454,Invisible Life,2019,7.9,308,Drama,140
+455,The Greatest Showman,2017,7.884,9507,Drama,105
+456,Wish Dragon,2021,7.881,1357,"Animation, Family, Comedy, Fantasy",99
+457,Justice League: The Flashpoint Paradox,2013,7.9,1836,"Animation, Science Fiction, Action, Adventure",75
+458,"Argentina, 1985",2022,7.9,638,"Drama, History, Crime",141
+459,I'm No Longer Here,2019,7.9,489,Drama,112
+460,We Are the Nobles,2013,7.9,501,Comedy,108
+461,Winter Light,1963,7.9,451,Drama,80
+462,Umberto D.,1952,7.878,687,Drama,91
+463,Roman Holiday,1953,7.9,2064,"Romance, Comedy, Drama",119
+464,The Battle of Algiers,1966,7.9,789,"Drama, War, History",121
+465,Kill Bill: Vol. 2,2004,7.874,14008,"Action, Crime, Thriller",136
+466,An Egg Rescue,2021,7.9,410,"Animation, Comedy, Adventure, Family",89
+467,La Jetée,1962,7.9,898,"Romance, Science Fiction",28
+468,Little Women,2019,7.9,6338,"Drama, Romance, History",135
+469,Wild Tales,2014,7.9,3414,"Drama, Thriller, Comedy",122
+470,Ben-Hur,1959,7.871,2800,"History, Drama, Adventure, Action",222
+471,Sing Street,2016,7.9,2291,"Romance, Drama, Music",105
+472,The Night of the Hunter,1955,7.869,1633,"Crime, Drama, Thriller",93
+473,Young Frankenstein,1974,7.868,3148,Comedy,106
+474,Vincent,1982,7.9,856,"Animation, Fantasy",6
+475,Perfect Strangers,2016,7.864,4400,"Comedy, Drama",97
+476,Mamma Roma,1962,7.864,407,Drama,110
+477,Dancer in the Dark,2000,7.864,1808,"Drama, Crime",140
+478,Mary and Max,2009,7.9,2010,"Animation, Comedy, Drama",92
+479,Just Mercy,2019,7.862,2281,"Drama, Crime, History",137
+480,Paper Moon,1973,7.9,727,"Comedy, Crime, Drama",102
+481,Downfall,2004,7.9,3888,"Drama, History, War",155
+482,Fargo,1996,7.9,8165,"Crime, Drama, Thriller",98
+483,Finch,2021,7.859,3578,"Science Fiction, Drama, Adventure",115
+484,The Cameraman,1928,7.9,377,"Comedy, Romance",74
+485,A Beautiful Mind,2001,7.858,10281,"Drama, Romance",135
+486,A Bronx Tale,1993,7.857,2529,"Drama, Crime",121
+487,Sing 2,2021,7.9,4434,"Animation, Family, Music, Comedy",110
+488,Mr. Smith Goes to Washington,1939,7.856,1066,"Comedy, Drama",129
+489,Shoplifters,2018,7.854,2067,"Drama, Crime, Thriller",120
+490,My Fault,2023,7.852,3494,"Romance, Drama",117
+491,Her,2013,7.852,14355,"Romance, Science Fiction, Drama",126
+492,Isle of Dogs,2018,7.851,4940,"Adventure, Comedy, Animation",101
+493,Werckmeister Harmonies,2001,7.9,328,Drama,139
+494,Stand by Me,1986,7.851,5934,"Crime, Drama",89
+495,My Way,2011,7.85,391,"Drama, Action, History, War",137
+496,Indiana Jones and the Last Crusade,1989,7.8,10230,"Adventure, Action",127
+497,The Witch: Part 1. The Subversion,2018,7.8,596,"Action, Mystery, Science Fiction",125
+498,The Theory of Everything,2014,7.847,10570,"Drama, Romance",123
+499,Millennium Actress,2002,7.8,868,"Animation, Drama, Romance, Fantasy",87
+500,Grand Illusion,1937,7.847,696,"Drama, History, War",114
+501,Redeeming Love,2022,7.8,580,"Romance, Drama, Western",134
+502,See You Up There,2017,7.8,1279,"Drama, Crime, War",113
+503,Knives Out,2019,7.845,12579,"Comedy, Crime, Mystery",131
+504,Tampopo,1985,7.845,365,Comedy,115
+505,The Breadwinner,2017,7.844,844,"Animation, War, Drama, Family",94
+506,Departures,2008,7.8,835,Drama,130
+507,Dances with Wolves,1990,7.8,4275,"Adventure, Drama, Western",181
+508,Raya and the Last Dragon,2021,7.843,6843,"Animation, Family, Fantasy, Action, Adventure",107
+509,Warrior,2011,7.8,4607,"Drama, Action",140
+510,"Monsters, Inc.",2001,7.8,18603,"Animation, Comedy, Family",92
+511,Sherlock: The Abominable Bride,2016,7.842,2252,"Crime, Drama, Mystery",90
+512,Dog Day Afternoon,1975,7.842,2996,"Crime, Drama, Thriller",125
+513,Ivan's Childhood,1962,7.841,741,"Drama, War",95
+514,Papillon,1973,7.841,1928,"Crime, Drama",151
+515,Scooby-Doo! Camp Scare,2010,7.8,304,"Animation, Comedy, Family, Mystery",72
+516,The Big Lebowski,1998,7.839,11287,"Comedy, Crime",117
+517,Feast,2014,7.838,856,"Animation, Comedy, Drama, Family",6
+518,Ace in the Hole,1951,7.8,672,Drama,111
+519,Close to the Horizon,2019,7.8,486,"Romance, Drama",117
+520,Regular Show: The Movie,2015,7.8,383,"Animation, Comedy, Science Fiction, TV Movie, Adventure, Action",69
+521,Regular Show: The Movie,2015,7.8,383,"Animation, Comedy, Science Fiction, TV Movie, Adventure, Action",69
+522,The Nightmare Before Christmas,1993,7.837,9656,"Fantasy, Animation, Family",76
+523,Charm City Kings,2020,7.836,473,Drama,125
+524,How to Train Your Dragon,2010,7.8,13188,"Fantasy, Adventure, Animation, Family",98
+525,A Fistful of Dollars,1964,7.836,4296,Western,99
+526,The Whale,2022,7.835,4000,Drama,117
+527,Two Women,1960,7.8,536,"Drama, War",100
+528,The Virgin Spring,1960,7.835,618,"Drama, History",90
+529,The Grapes of Wrath,1940,7.831,994,Drama,129
+530,Carlito's Way,1993,7.833,3176,"Crime, Drama, Thriller",144
+531,Anatomy of a Murder,1959,7.8,1011,"Crime, Drama, Mystery",161
+532,The Marquis of Grillo,1981,7.8,466,Comedy,139
+533,Nostalgia,1983,7.836,537,"Drama, Romance",124
+534,The Boy in the Striped Pyjamas,2008,7.8,7224,"Drama, War, History",94
+535,Joint Security Area,2000,7.8,721,"War, Drama, Thriller, Mystery",108
+536,The Shadow in My Eye,2021,7.829,494,"War, Drama, History",107
+537,The Best Offer,2013,7.829,2853,"Drama, Romance, Crime",131
+538,War Room,2015,7.827,532,Drama,120
+539,We Bare Bears: The Movie,2020,7.826,810,"Animation, Adventure, Family, Comedy, TV Movie",69
+540,World of Tomorrow,2015,7.825,326,"Animation, Drama, Science Fiction",17
+541,La luna,2012,7.8,802,"Animation, Family, Fantasy",7
+542,Kiki's Delivery Service,1989,7.825,4119,"Animation, Family, Fantasy",103
+543,"Love, Rosie",2014,7.824,6244,"Romance, Drama, Comedy",102
+544,Ratatouille,2007,7.8,17250,"Animation, Comedy, Family, Fantasy",111
+545,Rosemary's Baby,1968,7.8,3978,"Drama, Horror, Thriller",138
+546,A Bag of Marbles,2017,7.822,856,"War, Drama",113
+547,Fantozzi: White Collar Blues,1975,7.822,827,Comedy,108
+548,Infernal Affairs,2002,7.822,1660,"Drama, Action, Thriller, Crime, Mystery",100
+549,1900,1976,7.822,631,"Drama, History",316
+550,The Specials,2019,7.821,915,"Comedy, Drama",114

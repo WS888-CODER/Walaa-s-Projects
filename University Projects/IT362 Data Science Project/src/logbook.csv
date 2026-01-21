@@ -1,0 +1,53 @@
+﻿Date,Step,Task,Tools Used,Details,Challenges & Solutions
+1/27/2025,Data Collection,Create API key,TMDb API,Created a TMDb Account and requested an API key.,"Initially used another site for API key, but it was invalid; switched to TMDb for accuracy."
+1/28/2025,Data Collection,Fetching Movie IDs,"Pandas, Requests",Implemented fetch_top_rated_movies(limit=550) with error handling for API failures and JSON decoding.,No major issues.
+1/29/2025,Data Collection,Fetching Movie Details,"Pandas, Requests",Implemented fetch_movie_data(movie_id) and managed missing fields.,No major issues.
+1/29/2025,Data Processing,Convert data to DataFrame,Pandas,Stored movie details in a list and converted it into a DataFrame.,No major issues.
+1/29/2025,Saving & Displaying Data,Save dataset,Pandas,Saved as Primary_Raw_Data.csv.,No major issues.
+1/29/2025,Loading Data,Load Primary Raw Dataset,Pandas,Loaded the raw dataset into a Pandas DataFrame.,No major issues.
+1/29/2025,Data Cleaning,Remove duplicates,Pandas,Removed duplicate movie entries.,No major issues.
+1/29/2025,Data Cleaning,Handle missing values,Pandas,"Dropped movies missing Title, Year, or Genre.",Some movies had missing Runtime; filled with 0.
+1/29/2025,Data Transformation,Convert Year to Integer,Pandas,Standardized all years as integers.,Some years were missing; handled them as 0.
+1/30/2025,Text Preprocessing,Clean Genre Text,"Pandas, String Methods",Removed extra spaces and formatted correctly.,No major issues.
+1/30/2025,Numeric Processing,Convert Runtime to Integer,"Pandas, Regex",Extracted runtime values and stored them as integers.,Some Runtime values were missing; replaced with 0.
+1/30/2025,Data Export,Save Cleaned Dataset,Pandas,Saved as Primary_Cleaned_Data.csv.,Verified dataset integrity before saving.
+3/3/2025,EDA,Check missing values,Pandas,Identified missing values in the dataset.,Handled missing values by replacing with 0 or dropping where necessary.
+3/3/2025,EDA,Check data types,Pandas,Ensured all columns had the correct data types.,Converted object columns to appropriate numeric or categorical types.
+3/3/2025,EDA,Analyze numerical distributions,"Matplotlib, Seaborn",Plotted histograms and boxplots for numerical columns.,Detected outliers in runtime and votes; planned normalization.
+3/3/2025,EDA,Analyze categorical distributions,"Pandas, Seaborn",Checked unique values and distributions of categorical variables.,Some categories had very low occurrences; considered grouping.
+3/3/2025,EDA,Visualize correlation matrix,"Pandas, Seaborn",Generated a heatmap to analyze feature relationships.,"Some features were highly correlated, leading to potential multicollinearity."
+3/3/2025,EDA,Check duplicates,Pandas,Rechecked dataset for duplicates after cleaning.,No new duplicates were found.
+3/3/2025,Loading Data,Load Primary Cleaned Dataset,Pandas,Loaded the cleaned dataset for further processing.,No major issues.
+3/3/2025,Normalization,Scaled Votes and Runtime,MinMaxScaler Methods,Scaled features to a 0-1 range to prevent bias.,No major issues.
+3/3/2025,Standardization,Standardized IMDb Rating by centering it,StandardScaler Methods,Centered and normalized for better comparability.,No major issues.
+3/3/2025,One-Hot Encoding,Converted the categorical Genre,OneHotEncoder Methods,Converted categorical data into numeric format.,No major issues.
+3/3/2025,Data Export,Save Processed Dataset,Pandas,Saved as Primary_Processed_Data.csv.,No major issues.
+3/10/2025,Loading Data,Load Secondary Raw Dataset,Pandas,Loaded the raw dataset into a Pandas DataFrame.,No major issues.
+3/10/2025,EDA,Data Overview,Pandas,"Get a quick overview of the data""",No major issues.
+3/10/2025,EDA, Some improvements,Pandas,"use Pandas to clean the data by removing missing values, converting columns to appropriate types, and formatting the Watchtime columns for analysis, then displays the updated data types.",No major issues.
+3/10/2025,EDA, Descriptive Statistics,Pandas, generates basic statistics for the numerical columns,No major issues.
+3/10/2025,EDA,Visualization,"Pandas, Matplotlib, and Seaborn.",generated some visualiziton to see some feature relationships.,No major issues.
+3/10/2025,EDA,Correlation Analysis,"Pandas, Matplotlib, and Seaborn.",generate a correlation matrix heatmap to explore relationships between movie attributes.,No major issues.
+3/10/2025,EDA,Bias Analysis,"Pandas, Matplotlib, and Seaborn.",Visualizing potential biases in the dataset by looking at the distribution of movies based on release year and genre. ,No major issues.
+3/10/2025,Loading Data,Load Secondary Raw Dataset,Pandas,Loaded the raw dataset into a Pandas DataFrame.,No major issues.
+3/10/2025,Data Cleaning,Remove Duplicates,Pandas,Removed duplicate movie entries.,No major issues.
+3/10/2025,Data Cleaning,Drop Missing Values,Pandas,Removed rows with missing values.,No major issues.
+3/10/2025,Data Transformation,Convert 'Watchtime in Million' to Float,"Pandas, String Methods",Removed M suffix and converted the column to a numeric format.,No major issues.
+3/10/2025,Data Transformation,Rename Column,Pandas,Renamed Watchtime in Million to Watchtime_M.,No major issues.
+3/10/2025,Data Cleaning,Drop Redundant Column,Pandas,Removed Watchtime column after renaming.,No major issues.
+3/10/2025,Data Export,Save Cleaned Dataset,Pandas,Saved as Secondary_Cleaned_Data.csv.,No major issues.
+3/10/2025,Loading Data,Load Secondary Cleaned Dataset,Pandas,Loaded the cleaned dataset for further processing.,No major issues.
+3/10/2025,Normalization,Scaled Watchtime_M,MinMaxScaler Methods,Scaled Watchtime_M to a 0-1 range to prevent bias.,No major issues.
+3/10/2025,One-Hot Encoding,Converted the categorical Genre,OneHotEncoder Methods,Converted categorical data into numeric format.,No major issues.
+3/10/2025,Data Export,Save Processed Dataset,Pandas,Saved as Secondary_Processed_Data.csv.,No major issues.
+11/3/2025,Reoprt,Primary Data EDA,Word,Interpret and visualize primary data and EDA.,No major issues.
+11/3/2025,Reoprt,Secondary Data EDA,Word,Interpret and visualize secondary data and EDA.,No major issues.
+12/3/2025,Modification,Modify previous phase's report,Word,We edit the report according to supervisor's comments,No major issues.
+12/3/2025,Reoprt,comparision,Word,compare the two data sources primary vs secondary,No major issues.
+12/3/2025,Reoprt,summray,Word,write the summary of EDA,No major issues.
+17/4/2025,Data Preparation,Data Preparation and Feature Selection,Pandas," load the cleaned dataset, select only the relevant features  and prepare the data by handling any missing values. We then split the data into training and testing sets to be used later in the modeling phase.",No major issues.
+17/4/2025,Modelling,Building and Evaluating the Baseline Model,LinearRegression,Built a baseline linear regression model. Results showed poor performance.,No major issues.
+17/4/2025,Modelling,Train Random Forest Model,Scikit-learn,Trained Random Forest Regressor and evaluated performance.,No major issues.
+17/4/2025,Modelling,Train Gradient Boosting Model,Scikit-learn,Trained Gradient Boosting Regressor with better performance.,No major issues.
+17/4/2025,Evaluation,Compare Models,Scikit-learn,"Compared models using MAE, RMSE, and Rآ². Selected Gradient Boosting as the best model.",No major issues.
+24/4/2025,Report,modiling approch report,word,adding phase 3 part to the report,none
