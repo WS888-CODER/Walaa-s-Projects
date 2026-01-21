@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+    <title>Add New Product | VendorVista</title>
+</head>
+<body>
+  <header>
+	<div class="header-bottom">
+		
+		<a href="index.html"><img src="images/Vlogo.png" alt="VendorVista Logo" id="vlogo" class="logo"></a>
+    </div>
+        <div class="header-top">
+            <div class="logo-name-container">
+                <a href="index.html" class="site-name">VendorVista</a>
+            </div>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Seller'sDashboard.html">Seller’s Dashboard</a></li>
+                    <li><a href="categoryElectronics.html">Electronics</a></li>
+                    <li><a href="categoryBeautyHealth.html">Beauty & Health</a></li>
+                    <li><a href="categoryToolsHome.html">Tools & Home Improvements</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-box">
+                <button class="search-button">Go</button>
+            </div>
+            <div class="icon-links">
+                <a href="user_page.html"><img id="userpage" class="header-icons" src="images/user-page.png" alt="User Page"></a>
+                <a href="cart_page.html"><img class="header-icons" src="images/cart.png" alt="Cart"></a>
+            </div>
+        </div>
+
+    </header>
+	<div style="text-align: right;">
+    <a href="#maincontent" accesskey="1">Skip to main content</a>
+</div>
+  <main id="maincontent">
+<nav aria-label="breadcrumb" class="breadcrumb-zuhd">
+	<ul>
+        <li><a href="index.html">Home</a></li>
+        <li><span> &gt; </span></li>
+        <li><a href="Seller'sDashboard.html">Seller's Dashboard</a></li>
+		<li><span> &gt; </span></li>
+        <li class="active">Add New Product</li>
+    </ul>
+</nav>
+
+    <section id="add-new-product-zuhd">
+        <h2>Add a New Product</h2>
+		<br>
+        <form action="addProduct.html" method="POST" enctype="multipart/form-data" class="product-form-zuhd">
+
+            <!-- Product Photo -->
+            <div class="form-group-zuhd">
+                <label for="product-photo-zuhd">Product Photo:</label>
+                <input type="file" id="product-photo-zuhd" name="product-photo-zuhd" accept="image/*" >
+            </div>
+			
+            <!-- Product Name -->
+            <div class="form-group-zuhd">
+                <label for="product-name-zuhd">Product Name:</label>
+                <input type="text" id="product-name-zuhd" name="product-name-zuhd" >
+            </div>
+
+            <!-- Product Price -->
+            <div class="form-group-zuhd">
+                <label for="product-price-zuhd">Price:</label>
+                <input type="number" id="product-price-zuhd" name="product-price-zuhd" min="0" step="0.01" >
+            </div>
+
+            <!-- Product Category -->
+            <div class="form-group-zuhd">
+                <label for="product-category-zuhd">Category:</label>
+                <select id="product-category-zuhd" name="product-category" >
+				    <option value="">Please select an option</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="beauty & health">Beauty & Health</option>
+                    <option value="tools & home improvments">Tools & Home Improvments</option>
+                </select>
+            </div>
+
+            <!-- Product Quantity -->
+            <div class="form-group-zuhd">
+                <label for="product-quantity-zuhd">Quantity:</label>
+                <input type="number" id="product-quantity-zuhd" name="product-quantity-zuhd" min="1" >
+            </div>
+
+            <!-- Product Description -->
+            <div class="form-group-zuhd">
+                <label for="product-description-zuhd">Description:</label>
+                <textarea id="product-description-zuhd" name="product-description-zuhd" rows="5" ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group-zuhd">
+                <button type="submit" class="submit-btn-zuhd">Add Product</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+   <footer>
+        <div class="footer-info">
+            <span id="contactus"><b>Contact Us:</b></span>
+            <img src="images/insta.png" alt="Instagram">
+            <span>VendorVista.sa</span>
+            <img src="images/snap.png" alt="Snapchat">
+            <span>VendorVista.sa</span>
+            <img src="images/email.png" alt="Email">
+            <span>VendorVista@gmail.com</span>
+            <img src="images/tel.png" alt="Phone">
+            <span>0112348890</span>
+        </div>
+        <p id="copyright">© 2024 VendorVista. All rights reserved.</p>
+    </footer>
+</body>
+</html>

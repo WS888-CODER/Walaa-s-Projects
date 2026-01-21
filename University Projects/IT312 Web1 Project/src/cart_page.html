@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart | VendorVista</title>
+</head>
+<body>
+    <header>
+        <div class="header-bottom">
+            <a href="index.html"><img src="images/Vlogo.png" alt="VendorVista Logo" id="vlogo" class="logo"></a>
+        </div>
+        <div class="header-top">
+            <div class="logo-name-container">
+                <a href="index.html" class="site-name">VendorVista</a>
+            </div>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Seller'sDashboard.html">Seller’s Dashboard</a></li>
+                    <li><a href="categoryElectronics.html">Electronics</a></li>
+                    <li><a href="categoryBeautyHealth.html">Beauty & Health</a></li>
+                    <li><a href="categoryToolsHome.html">Tools & Home Improvements</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-box">
+                <button class="search-button">Go</button>
+            </div>
+            <div class="icon-links">
+                <a href="user_page.html"><img id="userpage" class="header-icons" src="images/user-page.png" alt="User Page"></a>
+                <a href="cart_page.html"><img class="header-icons" src="images/cart.png" alt="Cart"></a>
+            </div>
+        </div>
+    </header>
+    <main id="maincontent">
+        <nav aria-label="breadcrumb" class="breadcrumb-zuhd">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span> &gt; </span></li>
+                <li><a href="user_page.html">Customer'sDashboard</a></li>
+                <li><span> &gt; </span></li>
+                <li class="active">Shopping Cart<li>
+            </ul>
+        </nav>
+        <section id="cart-page">
+            <h2>Shopping Cart</h2>
+            <div class="cart-actions">
+                <button class="clear-cart">Empty the Cart</button>
+                <button class="checkout">Checkout</button>
+            </div>
+            <!-- Cart Items -->
+            <div class="cart-item" data-price="35.99">
+                <img src="images/p1.jpg" alt="Product Image 1" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Stylish Ceramic Vases</h3>
+                    <p>Price: 35.99 SR</p>
+                    <label for="quantity1">Quantity:</label>
+                    <input type="number" id="quantity1" name="quantity1" value="1" min="1">
+                    <button class="update-quantity">Update</button>
+                    <button class="delete-item">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="175.88">
+                <img src="images/p2.jpg" alt="Product Image 2" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Modern Fabric Textured Chair</h3>
+                    <p>Price: 175.88 SR</p>
+                    <label for="quantity2">Quantity:</label>
+                    <input type="number" id="quantity2" name="quantity2" value="1" min="1">
+                    <button class="update-quantity">Update</button>
+                    <button class="delete-item">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="57.73">
+                <img src="images/p3.jpg" alt="Product Image 3" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Signature Eyeshadow Palette</h3>
+                    <p>Price: 57.73 SR</p>
+                    <label for="quantity3">Quantity:</label>
+                    <input type="number" id="quantity3" name="quantity3" value="1" min="1">
+                    <button class="update-quantity">Update</button>
+                    <button class="delete-item">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="23.11">
+                <img src="images/p4.jpg" alt="Product Image 4" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Elegant Gold Jewelry Collection</h3>
+                    <p>Price: 23.11 SR</p>
+                    <label for="quantity4">Quantity:</label>
+                    <input type="number" id="quantity4" name="quantity4" value="3" min="1">
+                    <button class="update-quantity">Update</button>
+                    <button class="delete-item">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-item" data-price="25.75">
+                <img src="images/p5.jpg" alt="Product Image 5" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3>Trendy Earphone Case</h3>
+                    <p>Price: 25.75 SR</p>
+                    <label for="quantity5">Quantity:</label>
+                    <input type="number" id="quantity5" name="quantity5" value="2" min="1">
+                    <button class="update-quantity">Update</button>
+                    <button class="delete-item">Remove</button>
+                </div>
+            </div>
+            <div class="cart-total">
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-info">
+            <span id="contactus"><b>Contact Us:</b></span>
+            <img src="images/insta.png" alt="Instagram">
+            <span>VendorVista.sa</span>
+            <img src="images/snap.png" alt="Snapchat">
+            <span>VendorVista.sa</span>
+            <img src="images/email.png" alt="Email">
+            <span>VendorVista@gmail.com</span>
+            <img src="images/tel.png" alt="Phone">
+            <span>0112348890</span>
+        </div>
+        <p id="copyright">© 2024 VendorVista. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

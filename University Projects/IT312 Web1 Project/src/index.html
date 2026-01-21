@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>VendorVista</title>
+
+
+
+</head>
+<body>
+
+  <header>
+    <!-- Logo Section -->
+    <div class="header-bottom">
+        <a href="index.html"><img src="images/Vlogo.png" alt="VendorVista Logo" id="vlogo" class="logo"></a>
+    </div>
+
+    <!-- Top Section with Navigation, Search, and Icons -->
+    <div class="header-top">
+        <div class="logo-name-container">
+            <a href="index.html" class="site-name">VendorVista</a>
+        </div>
+
+        <!-- Hamburger Menu Icon for small screens -->
+        <button class="hamburger" onclick="toggleNav()">☰</button>
+
+        <!-- Regular Navigation Menu (visible on larger screens) -->
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Seller'sDashboard.html">Seller’s Dashboard</a></li>
+                <li><a href="categoryElectronics.html">Electronics</a></li>
+                <li><a href="categoryBeautyHealth.html">Beauty & Health</a></li>
+                <li><a href="categoryToolsHome.html">Tools & Home Improvements</a></li>
+            </ul>
+        </nav>
+
+        <!-- Full Search Container (for larger screens) -->
+<div class="search-container">
+    <input type="text" placeholder="Search..." class="search-box">
+    <button class="search-button">Go</button>
+	
+</div>
+
+<!-- Search Icon (for small screens only) -->
+<a href="#" class="search-icon">
+    <img src="images/searchPhone.png" alt="Search">
+</a>
+
+		
+		
+
+       <div class="icon-links">
+    <a href="user_page.html" class="header-user-icon">
+        <img id="userpage" class="header-icons" src="images/user-page.png" alt="User Page">
+    </a>
+    <a href="cart_page.html">
+        <img class="header-icons" src="images/cart.png" alt="Cart">
+    </a>
+	<!-- Theme Toggle Icon -->
+			           <div id="theme-toggle" class="theme-toggle-icon" title="Toggle Theme"></div> 
+</div>
+
+    </div>
+</header>
+
+<div id="overlayNav" class="overlay">
+    <!-- Top section with background color -->
+    <div class="overlay-top-section">
+        <!-- User Icon inside the fly-in -->
+        <a href="user_page.html" class="overlay-user-icon">
+            <img src="images/user-pageNT.png" alt="User Page">
+        </a>
+    </div>
+
+    <!-- Close Button to Close Overlay -->
+    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+
+    <div class="overlay-content">
+        <!-- Overlay Navigation Links -->
+        <a href="index.html">Home</a>
+        <a href="Seller'sDashboard.html">Seller’s Dashboard</a>
+        <a href="categoryElectronics.html">Electronics</a>
+        <a href="categoryBeautyHealth.html">Beauty & Health</a>
+        <a href="categoryToolsHome.html">Tools & Home Improvements</a>
+    </div>
+</div>
+
+
+
+
+<div class="skip-link">
+    <a href="#maincontent" accesskey="1">Skip to main content</a>
+</div>
+
+
+  <main class="main-raghad" id='maincontent'>
+    <!-- Banner Image Section -->
+    <section id="banner-raghad" class="banner-section-raghad">
+        <img src="images/g.jpg" alt="Banner Image" class="banner-img-raghad">
+    </section>
+    <!-- Vision Section -->
+    <section class="vision-section-raghad">
+        <h2>Our Vision</h2>
+        <p>"At VendorVista, our vision is to create a fun, easy-to-use marketplace where sellers can showcase their creativity
+        and buyers can discover unique products that bring joy to their everyday lives. We believe in empowering small businesses,
+        connecting passionate sellers with curious shoppers, and making online shopping a delightful experience for everyone.
+        Our goal is to build a community where trust, creativity, and customer satisfaction are at the heart of everything we do." 
+        <span class="small-text-raghad">VendorVista Owners</span></p>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers-raghad" class="offers-section-raghad">
+        <h2>Our Offers</h2>
+        <p id="weekDate"></p> <!-- عنصر لعرض تاريخ بداية الأسبوع -->
+        <div class="offer-container-raghad">
+            <div class="offer-raghad">
+                <img src="images/B.webp" alt="Beauty Offer">
+                <h3>Beauty</h3>
+                <p>Get up to 30% off on beauty products.</p>
+            </div>
+            <div class="offer-raghad">
+                <img src="images/C.jpg" alt="Clothing Offer">
+                <h3>Clothing</h3>
+                <p>Fashion sale up to 50% off!</p>
+            </div>
+            <div class="offer-raghad">
+                <img src="images/s.jpg" alt="Sports Offer">
+                <h3>Sports</h3>
+                <p>Up to 35% off on sports equipment.</p>
+            </div>
+            <div class="offer-raghad hidden-offer">
+                <img src="images/Electronics.jpg" alt="Electronics Offer">
+                <h3>Electronics</h3>
+                <p>35% off on electronics!</p>
+            </div>
+            <div class="offer-raghad hidden-offer">
+                <img src="images/F.jpg" alt="Furniture Offer">
+                <h3>Furniture</h3>
+                <p>Up to 50% off on furniture.</p>
+            </div>
+            <div class="offer-raghad hidden-offer">
+                <img src="images/k.jpg" alt="Kid Toys Offer">
+                <h3>Kid Toys</h3>
+                <p>Up to 40% off on kids' toys.</p>
+            </div>
+        </div>
+        <button id="moreButton" onclick="showMoreOffers()">More</button>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories-raghad" class="categories-section-raghad">
+        <h2>Categories</h2>
+        <div class="category-container-raghad">
+            <a href="categoryToolsHome.html" class="category-raghad">
+                <img src="images/furniture.jpg" alt="Furniture Category">
+                <h3>Tools & Home Improvement</h3>
+            </a>
+            <a href="categoryElectronics.html" class="category-raghad">
+                <img src="images/elect.jpg" alt="Electronics Category">
+                <h3>Electronics</h3>
+            </a>
+            <a href="categoryBeautyHealth.html" class="category-raghad">
+                <img src="images/beauty.jpg" alt="Beauty & Health Category">
+                <h3>Beauty & Health</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews-raghad" class="reviews-section-raghad">
+        <h2>Customer Reviews</h2>
+        <div class="review-container-raghad">
+            <div class="review-raghad">
+                <img src="images/IB.jpg" alt="User Icon" class="review-img-raghad">
+                <p><strong>Ragdah.</strong> - "Great electronics, super satisfied!"</p>
+                <span class="rating-raghad">★★★★☆</span>
+                <div class="review-details">Customer: Ragdah<br>Product: Electronics<br>Rating: 5/5<br>Feedback: Great electronics!</div>
+            </div>
+            <div class="review-raghad">
+                <img src="images/IB.jpg" alt="User Icon" class="review-img-raghad">
+                <p><strong>Sarah.</strong> - "Loved the beauty products, they are amazing!"</p>
+                <span class="rating-raghad">★★★★★</span>
+                <div class="review-details">Customer: Sarah<br>Product: Beauty<br>Rating: 5/5<br>Feedback: Loved the products!</div>
+            </div>
+            <div class="review-raghad">
+                <img src="images/IB.jpg" alt="User Icon" class="review-img-raghad">
+                <p><strong>Omar.</strong> - "The toys are perfect for my kids, they love them."</p>
+                <span class="rating-raghad">★★★★☆</span>
+                <div class="review-details">Customer: Omar<br>Product: Toys<br>Rating: 4/5<br>Feedback: Kids love them!</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <div class="footer-info">
+            <span id="contactus"><b>Contact Us:</b></span>
+            <img src="images/insta.png" alt="Instagram">
+            <span>VendorVista.sa</span>
+            <img src="images/snap.png" alt="Snapchat">
+            <span>VendorVista.sa</span>
+            <img src="images/email.png" alt="Email">
+            <span>VendorVista@gmail.com</span>
+            <img src="images/tel.png" alt="Phone">
+            <span>0112348890</span>
+        </div>
+        <p id="copyright">© 2024 VendorVista. All rights reserved.</p>
+    </footer>
+	
+	
+	
+<!-- Darkened background when overlay is open -->
+<div class="dark-background" id="darkBackground"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOM fully loaded. Initializing scripts...");
+
+    // Theme toggle logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            if (body.classList.contains('theme-dark')) {
+                body.classList.remove('theme-dark');
+                localStorage.setItem('theme', ''); // Save preference as light mode
+            } else {
+                body.classList.add('theme-dark');
+                localStorage.setItem('theme', 'theme-dark'); // Save preference as dark mode
+            }
+        });
+    } else {
+        console.log("Theme toggle button not found on this page.");
+    }
+	});
+	</script>
+
+<script src="script.js"></script>
+</body>
+</html>

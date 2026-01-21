@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Evaluation | VendorVista</title>
+</head>
+<body>
+  <header>
+	<div class="header-bottom">
+		
+		<a href="index.html"><img src="images/Vlogo.png" alt="VendorVista Logo" id="vlogo" class="logo"></a>
+    </div>
+        <div class="header-top">
+            <div class="logo-name-container">
+                <a href="index.html" class="site-name">VendorVista</a>
+            </div>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Seller'sDashboard.html">Seller’s Dashboard</a></li>
+                    <li><a href="categoryElectronics.html">Electronics</a></li>
+                    <li><a href="categoryBeautyHealth.html">Beauty & Health</a></li>
+                    <li><a href="categoryToolsHome.html">Tools & Home Improvements</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-box">
+                <button class="search-button">Go</button>
+            </div>
+            <div class="icon-links">
+                <a href="user_page.html"><img id="userpage" class="header-icons" src="images/user-page.png" alt="User Page"></a>
+                <a href="cart_page.html"><img class="header-icons" src="images/cart.png" alt="Cart"></a>
+            </div>
+        </div>
+
+    </header>
+	
+	<div style="text-align: right;">
+    <a href="#maincontent" accesskey="1">Skip to main content</a>
+</div>	
+	
+    <main id="maincontent">
+	<nav aria-label="breadcrumb" class="breadcrumb-zuhd">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+		<li><span> &gt; </span></li>
+		<li><a href="user_page.html">Customer'sDashboard</a></li>
+        <li><span> &gt; </span></li>
+        <li class="active">Evaluation<li>
+    </ul>
+	</nav>
+
+        <!-- Add your main content here -->
+		  <h1 style="text-indent:0.5em;" class="site-name">Reviews</h1>
+    <form action="" method="post">
+        <blockquote>
+            <label for="previous-orders" style="margin-left: 0.625em; font-family:Georgia, serif; color:#663399;">Select Previous Order</label>
+            <select id="previous-orders" style="width:18.75em; height:1.875em; margin-left: 3.125em; border-radius: 0.3125em;">
+                <option value="order1">Order #1</option>
+                <option value="order2">Order #2</option>
+                <option value="order3">Order #3</option>
+                <option value="order4">Order #4</option>
+            </select><br><br>
+
+          <label for="products" style="margin-right: 3.125em; margin-left: 0.625em; font-family:Georgia, serif; color:#663399;">Select Product</label>
+<select id="products" style="width:18.75em; height:1.875em; margin-left: 3.125em; border-radius: 0.3125em;">
+    <option value="product1">Product 1 - Eco-Friendly Orange Bottle</option>
+    <option value="product2">Product 2 - Reusable Coffee Cup</option>
+    <option value="product3">Product 3 - Insulated Lunch Bag</option>
+    <option value="product4">Product 4 - Organic Cotton Tote</option>
+</select>
+			
+        </blockquote><br>
+        <button type="submit" id="view-product-button" class="submit-button-haya" style="margin-left: 65.2em;font-family:Georgia;">View Product</button>
+		
+    </form><hr>
+	
+<div class="product-item-haya1">
+    <div class="product-info-haya">
+           <img src="images/foundation.jpg" alt="Eco-Friendly Water Bottle" id='hayaimg'>	
+    <div style="max-width: 25em;">
+
+            <h4 id="selected-product" class="site-name" style="font-size:1.1em;">Selected Product: Velvet Glow Foundation</h4>
+            <p>Achieve a flawless complexion with Velvet Glow Foundation, a luxurious blend designed for all skin types. This lightweight, buildable formula glides on smoothly, providing a natural finish that enhances your skin’s radiance.</p>
+            <p>Total Price: 70 SR</p>
+        </div>
+    </div><br>
+
+    <form action="" method="post">
+        <!--stars-->
+        <div class="rating">
+            <input type="radio" name="rating" id="r1">
+            <label for="r1"></label>
+            <input type="radio" name="rating" id="r2">
+            <label for="r2"></label>
+            <input type="radio" name="rating" id="r3">
+            <label for="r3"></label>
+            <input type="radio" name="rating" id="r4">
+            <label for="r4"></label>
+            <input type="radio" name="rating" id="r5">
+            <label for="r5"></label>
+        </div><br><br><br>
+
+        <fieldset style="border:solid;  margin-left: 0.625em; border-radius: 0.625em 0.3125em;">
+				<legend>Add Comment</legend>
+            <div class="comment-section-haya">
+                <textarea style=" resize:none;  margin-right: 15em; border-radius: 0.625em 0.3125em; margin-left: 0.625em; width:40em;" rows="7" placeholder="Enter your comment here..."></textarea>
+                <label for="photo-upload">Add Photos:</label>
+                <input type="file" id="photo-upload" accept="image/*">
+            </div>
+			<button type="submit" class="submit-button-haya" id="submitButton" style="position: absolute; right: 5em; font-family:Georgia;">Submit</button><br><br>
+        </fieldset>
+		    </form> 
+
+</div>
+<br>
+       
+</main><!--end of main-->
+
+	
+   <footer>
+        <div class="footer-info">
+            <span id="contactus"><b>Contact Us:</b></span>
+            <img src="images/insta.png" alt="Instagram">
+            <span>VendorVista.sa</span>
+            <img src="images/snap.png" alt="Snapchat">
+            <span>VendorVista.sa</span>
+            <img src="images/email.png" alt="Email">
+            <span>VendorVista@gmail.com</span>
+            <img src="images/tel.png" alt="Phone">
+            <span>0112348890</span>
+        </div>
+        <p id="copyright">© 2024 VendorVista. All rights reserved.</p>
+    </footer>
+	<script src="eval1.js"></script>
+</body>
+</html>

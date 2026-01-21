@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Offers | VendorVista</title>
+</head>
+<body>
+  <header>
+	<div class="header-bottom">
+		
+		<a href="index.html"><img src="images/Vlogo.png" alt="VendorVista Logo" id="vlogo" class="logo"></a>
+    </div>
+        <div class="header-top">
+            <div class="logo-name-container">
+                <a href="index.html" class="site-name">VendorVista</a>
+            </div>
+            <nav>
+                <ul id="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Seller'sDashboard.html">Seller’s Dashboard</a></li>
+                    <li><a href="categoryElectronics.html">Electronics</a></li>
+                    <li><a href="categoryBeautyHealth.html">Beauty & Health</a></li>
+                    <li><a href="categoryToolsHome.html">Tools & Home Improvements</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-box">
+                <button class="search-button">Go</button>
+            </div>
+            <div class="icon-links">
+                <a href="user_page.html"><img id="userpage" class="header-icons" src="images/user-page.png" alt="User Page"></a>
+                <a href="cart_page.html"><img class="header-icons" src="images/cart.png" alt="Cart"></a>
+            </div>
+        </div>
+
+    </header>
+	<div style="text-align: right;">
+    <a href="#maincontent" accesskey="1">Skip to main content</a>
+</div>
+    <main id="maincontent">
+        <!-- Add your main content here -->
+		
+<nav aria-label="breadcrumb" class="breadcrumb-fatema">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><span> &gt; </span></li>
+        <li><a href="Seller'sDashboard.html">Seller Dashboard</a></li>
+		<li><span> &gt; </span></li>
+		<li class="active">Manage offers</li>
+    </ul>
+	
+</nav>
+
+<h1 id="titleFatema">Manage offers </h1>
+
+<!----------------------------------------------------ADD OFFER ----------------------------------------------->
+
+<div class="addOfferFatema">
+    <form action="" method="post">
+        <h2 class='eee'>Add Offer</h2>
+        <hr class="fatimahHR">
+        <label for="imagefatema" class="labelFatema">Upload Image:</label>
+        <input type="file" id="imagefatema" accept="image/*" name="image?" required><br><br>
+
+        <label for="prdct_Offer_NFatema" class="labelFatema">Product Offer Name:</label>
+        <input type="text" id="prdct_Offer_NFatema" name="prdct_Offer_NFatema" placeholder="Enter name" maxlength="15" required><br><br>
+
+        <label for="prdct_Offer_DFatema" class="labelFatema">Product Offer Description:</label>
+        <textarea id="prdct_Offer_DFatema" name="prdct_Offer_DFatema" placeholder="Enter Description" style="resize:none;" required></textarea>
+
+        <input type="submit" name="Add Offer" value="Add Offer" id="addOffer-buttonFatema">
+    </form>
+</div>
+
+
+<hr class="fatimahHR"> 
+<!----------------------------DELETE OFFER --------------------------------->
+<div class="dltOfferFatema">
+    <h2 id="deleteofferFatema" class="eee">Delete Offer</h2>
+    <p id="allpFatema">All Products With Offer</p>
+    <hr class="fatimahHR">
+    <div id="offersContainer">
+        <!-- Existing offers -->
+        <div class="offer-itemFatema">
+            <input type="checkbox" name="offersFatema">
+            <img src="images/beautyOffer.jpg" alt="Product Offer Image" class="offerPicFatema">
+            <div class="offer-textFatema">
+                <p class="p_offerFatema">Blusher</p>
+                <pre class="p_descFatema">Add a natural flush to your cheeks with our silky, blendable blush. 
+Its lightweight formula glides smoothly onto the skin, providing a soft,
+ buildable color that lasts all day. Perfect for creating a fresh, 
+ glowing look suitable for any occasion</pre>
+            </div>
+        </div>
+        <hr class="fatimahHR">
+        <div class="offer-itemFatema">
+            <input type="checkbox" name="offersFatema">
+            <img src="images/laptopfatimah.jpg" alt="Product Offer Image" class="offerPicFatema">
+            <div class="offer-textFatema">
+                <p class="p_offerFatema">Laptop</p>
+                <pre class="p_descFatema">Experience powerful performance with our latest laptop, featuring a sleek design
+high-resolution display, and fast processing power. Ideal for both work and play, 
+it comes equipped with ample storage and long-lasting battery life, ensuring you 
+stay productive and entertained throughout the day.</pre>
+            </div>
+        </div>
+        <hr class="fatimahHR">
+    </div>
+    <input type="submit" name="Delete Offer" value="Delete Offer" id="deleteOffer-buttonFatema">
+</div>
+
+
+    </main>
+    
+
+<br><br><br><br>
+
+
+<!-------------------------------footer---------------------->
+
+   <footer>
+        <div class="footer-info">
+            <span id="contactus"><b>Contact Us:</b></span>
+            <img src="images/insta.png" alt="Instagram">
+            <span>VendorVista.sa</span>
+            <img src="images/snap.png" alt="Snapchat">
+            <span>VendorVista.sa</span>
+            <img src="images/email.png" alt="Email">
+            <span>VendorVista@gmail.com</span>
+            <img src="images/tel.png" alt="Phone">
+            <span>0112348890</span>
+        </div>
+        <p id="copyright">© 2024 VendorVista. All rights reserved.</p>
+    </footer>
+
+
+<script>
+
+//      --------------------DELETE OFFER----------------
+
+document.getElementById("deleteOffer-buttonFatema").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get all checkboxes
+    const checkboxes = document.querySelectorAll(".offer-itemFatema input[type='checkbox']");
+
+    // Filter checked offers
+    const selectedOffers = Array.from(checkboxes).filter(checkbox => checkbox.checked);
+
+    // Check if no offers are selected
+    if (selectedOffers.length === 0) {
+        alert("Please select at least one offer");
+        return;
+    }
+
+    // Confirm deletion
+    const confirmDelete = confirm("Are you sure you want to delete the selected offers?");
+    if (confirmDelete) {
+        selectedOffers.forEach(checkbox => {
+            // Remove the parent offer-item container
+            const offerItem = checkbox.closest(".offer-itemFatema");
+
+            // Remove the <hr> directly following the offer item
+            const nextSibling = offerItem.nextElementSibling;
+            if (nextSibling && nextSibling.tagName === "HR") {
+                nextSibling.remove();
+            }
+
+            offerItem.remove();
+        });
+        alert("Selected offers have been deleted.");
+    }
+});
+
+
+
+
+
+
+
+
+
+// --------------------ADD OFFER----------------
+document.getElementById("addOffer-buttonFatema").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get input values
+    const imageInput = document.getElementById("imagefatema");
+    const productName = document.getElementById("prdct_Offer_NFatema").value.trim();
+    const productDescription = document.getElementById("prdct_Offer_DFatema").value.trim();
+
+    // Validation for empty fields
+    if (!imageInput.files.length || !productName || !productDescription) {
+        alert("Please fill all fields and upload an image.");
+        return;
+    }
+
+    // Create new offer element
+    const offerContainer = document.createElement("div");
+    offerContainer.className = "offer-itemFatema";
+
+    // Add checkbox
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.name = "offersFatema";
+
+    // Add image
+    const image = document.createElement("img");
+    image.src = URL.createObjectURL(imageInput.files[0]);
+    image.alt = "Product Offer Image";
+    image.className = "offerPicFatema";
+
+    // Add text container
+    const textContainer = document.createElement("div");
+    textContainer.className = "offer-textFatema";
+
+    // Add product name
+    const productNameElement = document.createElement("p");
+    productNameElement.className = "p_offerFatema";
+    productNameElement.textContent = productName;
+
+    // Add product description
+    const productDescriptionElement = document.createElement("pre");
+    productDescriptionElement.className = "p_descFatema";
+    productDescriptionElement.textContent = productDescription;
+
+    // Append text elements to text container
+    textContainer.appendChild(productNameElement);
+    textContainer.appendChild(productDescriptionElement);
+
+    // Append all elements to the offer container
+    offerContainer.appendChild(checkbox);
+    offerContainer.appendChild(image);
+    offerContainer.appendChild(textContainer);
+
+    // Create and append a new hr element
+    const hrElement = document.createElement("hr");
+    hrElement.className = "fatimahHR";
+
+    // Add the new offer and hr to the offers container
+    const offersContainer = document.getElementById("offersContainer");
+    offersContainer.appendChild(offerContainer);
+    offersContainer.appendChild(hrElement);
+
+    // Clear the form fields
+    imageInput.value = "";
+    document.getElementById("prdct_Offer_NFatema").value = "";
+    document.getElementById("prdct_Offer_DFatema").value = "";
+
+    alert("Offer added successfully!");
+});
+
+
+
+
+</script>
+
+
+
+
+</body>
+
+
+</html>
