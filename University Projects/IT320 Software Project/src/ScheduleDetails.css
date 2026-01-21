@@ -1,0 +1,413 @@
+.btn:hover {
+  background-color: #b88d3f;
+  } 
+  .main-content {
+    flex: 1;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    margin: 100px 20px 20px; 
+  }
+  
+  .top-bar , .schedule-view h2 {
+    font-size: 24px;
+    color: #d0a84b;
+  }
+  
+  .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-btn {
+    margin-left: auto;
+  }
+  
+  .btn, .add-btn {
+    background: #d0a84b;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  .btn.active {
+    background: #b88d3f;
+  }
+  
+
+#calendar {
+  max-width: 800px; 
+  min-height: 600px;
+  margin: 120px auto 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.fc-day-header {
+  color: white !important;
+  font-weight: bold;
+}
+
+.fc-day-number {
+  color: white !important;
+  font-weight: bold;
+}
+
+.fc-event {
+  background-color: #d0a84b !important;
+  border: none !important;
+  color: white !important;
+}
+
+.fc-button {
+  background: #d0a84b !important; 
+  border: none !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.fc-button:hover {
+  background: #b88d3f !important;
+}
+
+.fc-button-group .fc-button {
+  background: #d0a84b !important;
+  border: none !important;
+}
+
+.fc-button-group .fc-button:hover {
+  background: #b88d3f !important;
+}
+
+.fc-toolbar {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.fc-center h2 {
+  color: #d0a84b !important;
+  font-weight: bold;
+}
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.8); 
+  color: white;
+  border-radius: 10px;
+}
+
+.modal-footer .btn {
+  background: #d0a84b !important;
+  color: white !important;
+  font-weight: bold;
+  border: none;
+}
+
+.modal-footer .btn:hover {
+  background: #b88d3f !important;
+}
+.fc-time {
+  color: white !important; 
+  font-weight: bold;
+}
+
+.fc-axis {
+  color: white !important;
+  font-weight: bold;
+}
+
+.fc-time-grid .fc-slats td {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.fc-time-grid .fc-time {
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.fc-day-grid-event .fc-time {
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold;
+}
+
+.fc-unthemed .fc-content, 
+.fc-unthemed .fc-time-grid-container,
+.fc-unthemed .fc-time-grid {
+  background-color: rgba(0, 0, 0, 0.0) !important; 
+}
+
+.fc-time-grid .fc-time {
+  color: white !important; 
+  font-weight: bold;
+}
+
+.fc-time-grid .fc-bg td {
+  background-color: rgba(0, 0, 0, 0.2) !important; 
+}
+
+.fc-time-grid .fc-slats td {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.fc-axis {
+  color: white !important; 
+  font-weight: bold;
+}
+
+.fc-today {
+  background-color: rgba(166, 124, 82, 0.6) !important; 
+}
+.destination-image-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.destination-image {
+  width: 100%; 
+  max-height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px;
+}
+
+.modal-header .close {
+  color: white !important; 
+  font-size: 24px; 
+  opacity: 1;
+}
+
+.modal-header {
+  background-color: #333; 
+  color: white; 
+}
+
+#readMoreLink:hover{
+  background-color:#b88d3f;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 992px) {
+
+  /* Main content adjustments */
+  .main-content {
+    margin: 80px 10px 20px;
+    padding: 15px;
+  }
+
+  /* Calendar adjustments */
+  #calendar {
+    margin: 100px 10px 20px;
+    min-height: 400px;
+    padding: 10px;
+  }
+  
+  .schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .fc-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .fc-toolbar .fc-center {
+    margin: 10px 0;
+    order: 2;
+  }
+  
+  .fc-toolbar .fc-left,
+  .fc-toolbar .fc-right {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Smaller devices */
+
+  .fc-view-container {
+    font-size: 0.8em;
+  }
+  
+  .btn-container {
+    flex-direction: row;
+  }
+  
+  .btn, .add-btn {
+    width: 48%;
+    margin: 5px 0;
+  }
+
+  .text-center{
+    margin: 5px;
+    text-align: center;
+  }
+
+  .btn-Download, .btn-primary  {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+  .btn-primary button {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small devices */
+  .fc-button {
+    padding: 5px 8px;
+    font-size: 0.8em;
+  }
+  
+  .fc-header-toolbar .fc-center h2 {
+    font-size: 1.2em;
+  }
+  
+  .destination-image {
+    max-height: 150px;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 992px) and (orientation: landscape) {
+  #calendar {
+    min-height: 300px;
+  }
+
+}
+
+
+
+/* Additional fixes for FullCalendar v6 */
+.fc .fc-toolbar-title {
+  font-size: 1.2em;
+  color: #d0a84b;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: white;
+  font-weight: bold;
+}
+
+.fc .fc-daygrid-day-number {
+  color: white;
+  font-weight: bold;
+}
+
+.fc .fc-timegrid-axis-cushion {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .fc .fc-toolbar-title {
+    font-size: 1em;
+  }
+  
+  .fc .fc-toolbar-chunk {
+    margin-bottom: 5px;
+  }
+}
+
+/* تعديلات لعنوان التاريخ (الشهر والسنة) */
+.fc .fc-toolbar-title {
+  font-size: 1.8em !important; /* تكبير الخط */
+  font-weight: 900 !important; /* جعله أغمق */
+  color: #d0a84b !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* إضافة ظل للنص */
+}
+
+/* تعديلات للوقت في التقويم */
+.fc-time {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 1em !important;
+}
+
+.fc-axis {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* تعديلات لعرض الأحداث */
+.fc-event {
+  background-color: #d0a84b !important;
+  border: none !important;
+  border-left: 4px solid #b88d3f !important; /* إضافة حد جانبي */
+  color: white !important;
+  padding: 3px 5px !important;
+  border-radius: 4px !important;
+  margin: 2px 0 !important;
+}
+
+.fc-event .fc-event-title {
+  font-weight: bold !important;
+  display: block !important;
+  white-space: normal !important; /* السماح بعرض النص على عدة أسطر */
+}
+
+/* تعديلات لحاوية التقويم */
+#calendar {
+  max-width: 900px !important;
+  min-height: 700px !important; /* زيادة الارتفاع */
+  margin: 120px auto 20px !important;
+  background: rgba(0, 0, 0, 0.7) !important; /* جعل الخلفية أغمق قليلاً */
+  padding: 20px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5) !important; /* إضافة ظل */
+}
+
+/* تحسين عرض الأيام في الوضع الأسبوعي واليومي */
+.fc-timeGridWeek-view .fc-day-content,
+.fc-timeGridDay-view .fc-day-content {
+  padding: 5px !important;
+}
+
+/* تحسين عرض الوقت في الوضع الأسبوعي واليومي */
+.fc-timegrid-slot {
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* تحسين عرض الأحداث في الوضع الشهري */
+.fc-dayGridMonth-view .fc-event {
+  font-size: 0.9em !important;
+  padding: 2px 4px !important;
+}
+
+/* تحسينات للعرض على الجوال */
+@media (max-width: 768px) {
+  #calendar {
+    min-height: 500px !important;
+    margin: 100px 10px 20px !important;
+    padding: 10px !important;
+  }
+  
+  .fc .fc-toolbar-title {
+    font-size: 1.4em !important;
+  }
+  
+  .fc-event {
+    font-size: 0.8em !important;
+  }
+}

@@ -1,0 +1,478 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    color: white;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.black-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.info-map-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-map-container .info, 
+.info-map-container .map {
+    width: 48%;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.reviews, .add-review {
+    width: 48%;
+}
+
+.review {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.add-review textarea, .add-review input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+.date {
+	color: gray;
+}
+
+.weather-cards {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px; 
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.weather-card img {
+    width: 40px; 
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.last-updated {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #f5b90d;
+}
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent; 
+}
+
+.weather-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(245, 185, 13, 0.6); 
+    border: 2px solid #f5b90d; 
+}
+
+.weather-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.weather-card:hover img {
+    transform: rotate(10deg) scale(1.1); 
+}
+.weather-card i {
+    font-size: 30px;
+    color: #f5b90d;
+    margin-bottom: 10px;
+}
+
+ 
+.map-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+.map-title {
+    font-size: 1.5rem;
+    color: #f5b90d;
+}
+
+/* Map preview styles */
+.map-preview {
+    width: 100%;
+    height: 250px;
+    border: 2px solid #f5b90d;
+}
+
+/* Enlarge link styles */
+.enlarge-map-link {
+    display: none;
+    color: #f5b90d;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+.enlarge-map-link:hover {
+    text-decoration: underline;
+}
+
+/* Modal styles */
+.map-modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.map-modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
+.map-modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.map-modal-close:hover,
+.map-modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal map styles */
+.modal-map {
+    width: 100%;
+    height: 400px;
+}
+		
+#submit {
+background: #f5b90d;
+width: 100px; 
+  height: 40px; 
+  border-radius: 10px;
+  padding: 10px;
+  color: white; 
+  border: none; 
+  cursor: pointer; 
+}
+#submit:hover {
+  background-color: #a37b07;
+  color: #fff; 
+  transform: scale(1.05);
+}
+.star-rating {
+  display: flex;
+  direction: row;
+}
+
+.star {
+  font-size: 2em;
+  color: #ccc; 
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: #ffcc00; 
+}
+
+.star.selected,
+.star.selected ~ .star {
+  color: #ffcc00; 
+}
+.reviewPhoto {
+	height: 50px;
+	width:50px;
+}
+.comment {
+	height: 100px;
+	width:50px;
+}
+.photo-container1 {
+  margin-top:80px;
+  margin-right: 60px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.review-photo1 {
+  width: 180px;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 10px; 
+  cursor: pointer;
+}
+.destination-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.destination-info h1 {
+  font-size: 80px;
+}
+.destination-info {
+margin-left:40px;
+  flex: 1;
+}
+
+.destination-images {
+  display: flex;
+  gap: 10px;
+}
+
+.review {
+  margin-bottom: 20px;
+}
+
+.review-photo, .review-video {
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.photo-container {
+  display: flex;
+  gap: 10px; 
+}
+
+.modal {
+  overflow: auto;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.modal img,
+.modal video {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+.close {
+  position: absolute;
+  top: 10px; /* Adjust so it's inside the modal */
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ========== Responsive Design for Destination Page ========== */
+@media (max-width: 576px) {
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+.background,
+.overlay {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+  .destination-header {
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .destination-info h1 {
+    font-size: 36px;
+  }
+
+  .destination-info {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+
+  .destination-images {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .photo-container1,
+  .photo-container {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .review-photo1 {
+    width: 40%;
+  }
+
+  .info-map-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .info-map-container .info,
+  .info-map-container .map {
+    width: 100%;
+  }
+
+  .reviews-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reviews,
+  .add-review {
+    width: 100%;
+  }
+
+  .review-photo,
+  .review-video {
+    width: 100%;
+  }
+
+  .black-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .weather-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .map-preview {
+    height: 200px;
+  }
+
+  .modal-map {
+    height: 300px;
+  }
+
+  .map-modal-content {
+    width: 90%;
+  }
+
+  .star {
+    font-size: 1.5em;
+  }
+
+  .destination-info h1 {
+    font-size: 36px;
+  }
+
+  .add-review textarea,
+  .add-review input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #submit {
+    width: 40%;
+    margin-top: 10px;
+
+  }
+
+}
+@media (max-width: 576px) {
+  .destination-images,
+.photo-container,
+.photo-container1 {
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 10px;
+  margin-right: 0;
+  
+}
+
+  .review-photo1,
+  .review-photo,
+  .review-video {
+    width: 40%;
+    max-width: 40%;
+  }
+
+  .destination-images img {
+    width: 40%;
+    height: auto;
+  }
+}

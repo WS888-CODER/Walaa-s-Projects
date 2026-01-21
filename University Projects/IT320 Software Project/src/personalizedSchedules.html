@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>FARRAH | Personalized Farrah schedule</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/HomeStyle.css">
+  <link rel="stylesheet" href="css/personalizedSchedule.css">
+  <link rel="stylesheet" href="css/baiscStyle.css"> 
+</head>
+
+<body>
+
+  <!--slidebar button-->
+  <div class="slidebar-btn" id="slidebarBtn">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+
+  <div class="slidebar" id="slidebar">
+    <ul>
+      <br><br>
+      <li><a href="PersonalInformation.html">Personal information</a></li><br>
+      <li><a href="personalizedSchedules.html">FARRAH Personalized schedule</a></li><br>
+      <li><a href="myschedules.php">My schedules</a></li>
+      <li><a class="sign-out" href="Logout.php">Sign out </a></li>
+    </ul>
+  </div>
+
+  <!-- header -->
+  <header>
+    <div class="header-left">
+      <div class="logo">Farrah</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Destnition.html">Destinations</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="search-popup" id="searchPopup">
+    <div class="search-box" style="padding:10px;">
+      <form id="homeSearchForm" action="#" method="get" style="display: flex; gap: 10px; align-items: center;">
+        <input id="homeSearchInput" type="search" name="q" placeholder="Search in Destinations..."
+          style="flex:1; padding:8px;" />
+        <button type="submit"
+          style="padding: 6px 12px; background: #d0a84b; border: none; color:#fff; border-radius:4px; cursor:pointer;">
+          Search
+        </button>
+        <button type="button" id="closeSearch"
+          style="font-size: 1.5rem; background: none; border: none; color: #444; cursor: pointer;">
+          &times;
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <section class="form-container-personalized">
+    <div class="form-box-personalized">
+      <h2 class="form-title-personalized">Plan Your Personalized Trip</h2>
+      <p class="form-subtitle-personalized">Answer a few questions, and we'll create your perfect schedule!</p>
+
+     <form id="travel-form-personalized" action="myschedules.php" method="POST">
+
+    <!-- Step 1: Region Selection (Dropdown) -->
+    <div class="step-personalized" id="step-1-personalized">
+        <label for="region-personalized">📍 Which region do you prefer?</label>
+        <select id="region-personalized" name="region-personalized">
+            <option value="">Select a Region</option>
+            <option value="center">Center</option>
+            <option value="south">️South</option>
+            <option value="west">West</option>
+            <option value="East">East</option>
+            <option value="north">North</option>
+        </select>
+        <button type="button" onclick="nextStep(1)">Next</button>
+    </div>
+
+    <!-- Step 2: Destination Type -->
+    <div class="step-personalized" id="step-2-personalized" style="display: none;">
+        <label for="destination-personalized">📍 What type of destination do you prefer?</label>
+        <select id="destination-personalized" name="destination-personalized">
+            <option value="">Select a destination</option>
+            <option value="oasis">🏝️ Oasis</option>
+            <option value="mountainous">⛰️ Mountainous</option>
+            <option value="sandy">🏜️ Sandy</option>
+            <option value="marine">🌊 Marine</option>
+            <option value="rocky">🪨 Rocky</option>
+        </select>
+        <button type="button" onclick="nextStep(2)">Next</button>
+    </div>
+
+      <!-- Step 3: Activities -->
+<div class="step-personalized" id="step-3-personalized" style="display: none;">
+    <label>🎯 What activities are you interested in?</label>
+    <div id="activities-list">
+        <label><input type="checkbox" name="things-to-do[]" value="camel_riding"> 🐪 Camel Riding</label>
+        <label><input type="checkbox" name="things-to-do[]" value="camping"> ⛺ Camping</label>
+        <label><input type="checkbox" name="things-to-do[]" value="cave_diving"> 🌊 Cave Diving</label>
+        <label><input type="checkbox" name="things-to-do[]" value="hiking"> 🥾 Hiking</label>
+        <label><input type="checkbox" name="things-to-do[]" value="photography"> 📸 Photography</label>
+        <label><input type="checkbox" name="things-to-do[]" value="swimming"> 🏊 Swimming</label>
+        <label><input type="checkbox" name="things-to-do[]" value="picnicking"> 🥪 Picnicking</label>
+        <label><input type="checkbox" name="things-to-do[]" value="nature_walks"> 🌳 Nature Walks</label>
+        <label><input type="checkbox" name="things-to-do[]" value="Stargazing">🔭 Stargazing</label>
+
+    </div>
+    <button type="button" onclick="nextStep(3)">Next</button>
+</div>
+    <!-- Step 4: Start Date -->
+    <div class="step-personalized" id="step-4-personalized" style="display: none;">
+        <label for="start-date-personalized">📅 When does your trip start?</label>
+        <input type="date" id="start-date-personalized" name="start-date-personalized">
+        <button type="button" onclick="nextStep(4)">Next</button>
+    </div>
+
+    <!-- Step 5: Duration -->
+    <div class="step-personalized" id="step-5-personalized" style="display: none;">
+        <label for="duration-personalized">📅 How many days will your trip be?</label>
+        <input type="number" id="duration-personalized" name="duration-personalized" min="1" max="30">
+        <button type="submit">Generate Schedule</button>
+    </div>
+
+</form>
+    </section>
+
+      <!-- Success Popup -->
+      <div id="success-popup-personalized" class="popup-overlay-personalized">
+        <div class="popup-box-personalized">
+          <p id="success-message-personalized"></p>
+        </div>
+      </div>
+
+      <!-- Error Popup -->
+      <div id="error-popup-personalized" class="popup-overlay-personalized">
+        <div class="popup-box-personalized">
+          <p id="error-message-personalized"></p>
+        </div>
+      </div>
+      <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <!-- About us -->
+          <div class="col">
+            <div class="single-footer">
+              <h2>About Us</h2>
+              <p>
+                Welcome to Farrah Travel, your gateway to exploring the hidden treasures of Saudi Arabia.
+                We are dedicated to providing curated travel experiences, insightful guides, and exceptional
+                services to ensure every journey becomes an unforgettable adventure.
+              </p>
+            </div>
+          </div>
+          <!-- Vision -->
+          <div class="col">
+            <div class="single-footer">
+              <h2>Vision</h2>
+              <p>
+                Our vision is to showcase the natural and cultural wonders of Saudi Arabia,
+                creating memorable travel experiences for every explorer.
+              </p>
+            </div>
+          </div>
+          <!-- Contact Us-->
+          <div class="col">
+            <h2>Contact Us</h2>
+            <ul class="social">
+              <li>
+                <img src="images/facebook-icon.png" alt="facebook" />
+                <span>FarrahTravel</span>
+              </li>
+              <li>
+                <img src="images/x-icon.png" alt="x" />
+                <span>@FarrahTravel</span>
+              </li>
+              <li>
+                <img src="images/instagram-icon.png" alt="instagram" />
+                <span>@Farrah_Travel</span>
+              </li>
+              <li>
+                <img src="images/gmail-icon.png" alt="gmail" />
+                <span>info@farrahtravel.com</span>
+              </li>
+              <li>
+                <img src="images/phone-icon.png" alt="phone" />
+                <span>+966 555 123 456</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  copyright -->
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="copyright-content">
+            <p>
+              © 2025 | All Rights Reserved by
+              <span>Farrah Travel</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+// Slidebar toggle
+const slidebarBtn = document.getElementById('slidebarBtn');
+const slidebar = document.getElementById('slidebar');
+slidebarBtn.addEventListener('click', () => {
+  slidebar.classList.toggle('active');
+  slidebarBtn.classList.toggle('is-active');
+});
+
+// Set today's date as the minimum for the start-date input
+window.addEventListener('DOMContentLoaded', () => {
+  const startDateInput = document.getElementById("start-date-personalized");
+  const today = new Date().toISOString().split("T")[0];
+  startDateInput.setAttribute("min", today);
+});
+
+// Function to go to the next step with validation
+function nextStep(step) {
+  // General input/select validation
+  let input = document.querySelector(`#step-${step}-personalized input, #step-${step}-personalized select`);
+  if (input && !input.value.trim() && !input.closest("div").querySelector('input[name="things-to-do"]')) {
+    showPopup("error", "🛑 Please fill in this field before proceeding.");
+    return;
+  }
+
+  // Special validation for step 3 (checkboxes)
+  if (step === 3) {
+    const checkboxes = document.querySelectorAll(`#step-${step}-personalized input[name="things-to-do[]"]:checked`);
+    if (checkboxes.length === 0) {
+      showPopup("error", "🛑 Please select at least one activity before proceeding.");
+      return;
+    }
+  }
+
+  // Show next step
+  document.getElementById(`step-${step}-personalized`).style.display = "none";
+  document.getElementById(`step-${step + 1}-personalized`).style.display = "block";
+}
+
+// Show popup
+function showPopup(type, message) {
+  const popupId = type === "success" ? "success-popup-personalized" : "error-popup-personalized";
+  const messageId = type === "success" ? "success-message-personalized" : "error-message-personalized";
+
+  document.getElementById(messageId).textContent = message;
+  const popup = document.getElementById(popupId);
+  popup.style.visibility = "visible";
+  popup.style.opacity = "1";
+
+  setTimeout(() => closePopup(popupId), 2000);
+}
+
+// Hide popup
+function closePopup(id) {
+  const popup = document.getElementById(id);
+  popup.style.visibility = "hidden";
+  popup.style.opacity = "0";
+}
+
+// Form submission with validation
+document.getElementById("travel-form-personalized").addEventListener("submit", function (event) {
+  event.preventDefault(); // Prevent immediate submission
+
+  const startDate = document.getElementById("start-date-personalized").value;
+  const today = new Date().toISOString().split("T")[0];
+
+  if (!startDate || startDate < today) {
+    showPopup("error", "📅 Please choose a valid start date (today or later).");
+    return;
+  }
+
+  // Optional: you can also validate duration here
+  const duration = document.getElementById("duration-personalized").value;
+  if (!duration || parseInt(duration) < 1) {
+    showPopup("error", "⏳ Please enter a valid duration.");
+    return;
+  }
+   console.log("form submitted");
+  // Immediately submit the form without showing any message
+  document.getElementById("travel-form-personalized").submit(); // This triggers the form submission immediately
+});
+
+
+</script>
+
+</body>
+
+</html>
