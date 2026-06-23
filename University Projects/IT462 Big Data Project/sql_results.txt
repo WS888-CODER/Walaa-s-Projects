@@ -1,0 +1,149 @@
+Loading dataset and registering temporary view...
+Dataset loaded: 123392 rows, 12 columns
+Temporary view registered as: jobs
+Columns: title, formatted_work_type, remote_allowed, formatted_experience_level, normalized_salary, salary_source, state, title_idx_num, state_idx_num, formatted_work_type_idx_num, formatted_experience_level_idx_num, salary_source_idx_num
+======================================================================
+
+======================================================================
+ QUERY 1: Average Salary per Experience Level (GROUP BY + HAVING)
+======================================================================
+Question: What is the average normalized salary per experience
+level, considering only experience levels with more than 100 job postings?
+
+  Experience Level            Avg Salary  Job Count
+-------------------------------------------------------
+  Executive                    119887.79       1221
+  Director                     113012.38       3742
+  Mid-Senior level              92308.64      41334
+  Unknown                       85933.06      29297
+  Associate                      82829.4       9743
+  Entry level                    78229.1      36619
+  Internship                    75042.66       1436
+======================================================================
+
+======================================================================
+ QUERY 2: Top 10 States by Average Salary (WHERE + ORDER BY + LIMIT)
+======================================================================
+Question: What are the top 10 states with the highest average
+salary, limited to states with more than 50 job postings?
+
+  State                                 Avg Salary  Job Count
+--------------------------------------------------------------
+  San Francisco Bay Area                 119269.81        314
+  New York City Metropolitan Area        106076.32        832
+  Greater Seattle Area                   105692.54         71
+  San Diego Metropolitan Area            102236.02         71
+  Los Angeles Metropolitan Area          101532.01        273
+  Greater Chicago Area                    96933.72        196
+  United States                           95565.68      11950
+  CA                                      94556.81      11415
+  Washington DC-Baltimore Area             94498.6        268
+  Greater Philadelphia                    94044.62         66
+======================================================================
+
+======================================================================
+ QUERY 3: Salary Rank within Each Experience Level (WINDOW + RANK)
+======================================================================
+Question: How does each job's salary rank within its experience level?
+
+  Title                                         Experience Level           Salary   Rank
+------------------------------------------------------------------------------------------
+  Modernization Software Dev                    Associate               960000.00      1
+  Structured Settlement Account Manager         Associate               435000.00      2
+  Real Estate Attorney                          Associate               435000.00      2
+  Full Time Reset Coordinator                   Associate               433280.00      4
+  FIG & Strategy - Practice Team Associate      Associate               432500.00      5
+  Dermatologist                                 Associate               385000.00      6
+  Litigation Associate                          Associate               337500.00      7
+  Project Finance Associate - 1890298           Associate               337500.00      7
+  Labor And Employment Attorney                 Associate               337500.00      7
+  Corporate Associate, Venture Capital - 1890   Associate               337500.00      7
+  Family Physician                              Associate               327600.00     11
+  Finance Associate (2019-22)                   Associate               312500.00     12
+  Privacy, Cyber & Data Governance Associate    Associate               310000.00     13
+  Commercial Lawyer                             Associate               301600.00     14
+  Regional Account Executive Leader - Constru   Associate               300000.00     15
+  Executive Managing Director, Reinsurance      Associate               300000.00     15
+  Sales Representative                          Associate               295000.00     17
+  Partner - Rewards Advisory                    Associate               287500.00     18
+  Pediatrician needed! $25k sign on bonus       Associate               280000.00     19
+  Family Law/Matrimonial Associate Attorney -   Associate               275000.00     20
+  Relief Veterinarian                           Associate               268320.00     21
+  Relief Veterinarian                           Associate               268320.00     21
+  Relief Veterinarian                           Associate               268320.00     21
+  Relief Veterinarian                           Associate               268320.00     21
+  High Grade Trader - Credit Sales and Tradin   Associate               266600.00     25
+  Private Clients, Trusts & Estates Associate   Associate               265000.00     26
+  Medical Doctor                                Associate               263499.00     27
+  Clinical Veterinarian (Consultant)            Associate               260000.00     28
+  Associate Attorney, Labor & Employment - 17   Associate               257500.00     29
+  White Collar Litigation Associate             Associate               257500.00     29
+  Elite Hedge Fund | Software Engineer          Associate               250000.00     31
+  Mergers and Acquisitions Associate            Associate               245000.00     32
+  Principal Software Engineer, R2 Storage       Associate               244500.00     33
+  Trademark Attorney                            Associate               242500.00     34
+  Trademark Attorney                            Associate               242500.00     34
+  International Arbitration Associate (Russia   Associate               242500.00     34
+  Junior Litigation Associate                   Associate               242500.00     34
+  Director, Commercial Management - Preconstr   Associate               240000.00     38
+  Information Technology Program Manager        Associate               239200.00     39
+  Sales Development Representative (SDR)        Associate               237500.00     40
+  Labor And Employment Attorney                 Associate               230000.00     41
+  Senior Producer                               Associate               225000.00     42
+  Derivatives Trader                            Associate               225000.00     42
+  General Dentist                               Associate               225000.00     42
+  General Dentist                               Associate               225000.00     42
+  Senior Investment Associate                   Associate               225000.00     42
+  General Dentist                               Associate               225000.00     42
+  Corporate Attorney                            Associate               225000.00     42
+  Commercial/Real Estate Litigation Associate   Associate               225000.00     42
+  Software Developer                            Associate               222560.00     50
+======================================================================
+
+======================================================================
+ QUERY 4: Jobs Above State Average Salary (CTE + Subquery + JOIN)
+======================================================================
+Question: Which jobs have a salary above their state's average salary?
+
+  Title                                    State                 Salary    State Avg     Above By
+-------------------------------------------------------------------------------------------------
+  Modernization Software Dev               WI                 960000.00     81508.29    878491.71
+  Quantitative Researcher                  Greater Chica      950000.00     96933.72    853066.28
+  Corporate, Litigation, Intellectual Pr   VA                 925000.00     86028.07    838971.93
+  Partner (& Groups w/ Portable Business   NY                 925000.00     93030.63    831969.37
+  Partner (& Groups w/ Portable Business   United States      925000.00     95565.68    829434.32
+  Partner (& Groups w/ Portable Business   San Francisco      925000.00    119269.81    805730.19
+  Head of Front Office Technology          New York City      875000.00    106076.32    768923.68
+  Quantitative Researcher                  United States      825000.00     95565.68    729434.32
+  Oral Surgeon - DDS/DMD                   PA                 750000.00     82484.91    667515.09
+  Python Developer                         IL                 750000.00     85539.65    664460.35
+  Senior Software Engineer                 United States      750000.00     95565.68    654434.32
+  Trust and Estates Partner                United States      750000.00     95565.68    654434.32
+  Network Engineer                         United States      750000.00     95565.68    654434.32
+  Litigation Partner                       United States      750000.00     95565.68    654434.32
+  Intellectual Property Partner            United States      750000.00     95565.68    654434.32
+  Senior Sales Account Executive - Enter   United States      750000.00     95565.68    654434.32
+  Labor & Employment Partner               United States      750000.00     95565.68    654434.32
+  Oral Surgeon                             FL                 700000.00     82353.68    617646.32
+  NEO4J- Senior Database administrator     United States      700000.00     95565.68    604434.32
+  Orthopedic Surgeon                       MN                 680000.00     82525.34    597474.66
+======================================================================
+
+======================================================================
+ QUERY 5: Salary Distribution by Work Type (Statistical Summary)
+======================================================================
+Question: What is the salary distribution across work types,
+including average, variance, percentiles, and distinct job title count?
+
+  Work Type           Jobs   Titles   Avg Salary      Std Dev        P25     Median        P75
+----------------------------------------------------------------------------------------------------
+  Contract           11998     7660     88885.03     30879.92   82500.00   82500.00   82500.00
+  Full-time          98553    58909     87432.84     34592.70   82500.00   82500.00   82500.00
+  Volunteer            557      449     82307.66      2634.96   82500.00   82500.00   82500.00
+  Other                486      417     81744.48     34255.87   82500.00   82500.00   82500.00
+  Temporary           1180      818     79864.57     27494.93   82500.00   82500.00   82500.00
+  Part-time           9653     5693     77236.02     22907.34   82500.00   82500.00   82500.00
+  Internship           965      732     75852.29     18249.37   82500.00   82500.00   82500.00
+======================================================================
+
+Output saved to: SQL_output.txt
